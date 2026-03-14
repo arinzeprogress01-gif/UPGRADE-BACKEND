@@ -28,3 +28,23 @@ export const deleteStudent = (id) => {
 
     return deleted[0];
 };
+
+export const updateStudentPartial = (id , data) => {
+    const student = students.find(s => s.id === id);
+
+    if (!students) return null;
+
+    Object.assign(student, data);
+
+    return student;
+}
+
+export const replaceStudent = (id, data) => {
+    const index = students.findIndex(s=> s.id === id);
+
+    if (index === -1) return null;
+
+    students[index] = { id, ...data };
+
+    return students[index];
+}
