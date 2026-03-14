@@ -1,4 +1,4 @@
-let students = [
+export const students = [
     { id: 1, name: "Elizabeth Jess", class: "apple1", payment: false },
     { id: 2, name: "Lizzy John", class: "apple2", payment: false },
     { id: 3, name: "Zion Taddy", class: "apple3", payment: false },

@@ -9,20 +9,20 @@ import {
   putStudent
 } from "../controllers/studentController.js";
 
-import { validateDeleteStudent, validateGetStudentId, validateGetStudentId, validatePatchStudent, validatePutStudent, validateStudent } from "../middleware/validateStudent.js";
+import { validateStudentId, validateStudent } from "../middleware/validateStudent.js";
 
 const router = express.Router();
 
 router.get("/students", getStudents);
 
-router.get("/students/:id",validateGetStudentId, getStudent);
+router.get("/students/:id",validateStudentId, getStudent);
 
 router.post("/students", validateStudent, addStudent);
 
-router.delete("/students/:id",validateDeleteStudent, removeStudent);
+router.delete("/students/:id", removeStudent);
 
-router.patch("/students/:id",validatePatchStudent, patchStudent);
+router.patch("/students/:id", patchStudent);
 
-router.put("/students/:id",validateStudent, validatePutStudent, putStudent);
+router.put("/students/:id",validateStudent, putStudent);
 
 export default router;

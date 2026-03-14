@@ -1,3 +1,5 @@
+import {students}  from "../data/studentDB.js";
+
 export const validateStudent = (req, res, next) => {
     const { name, class: studentClass, payment } = req.body;
 
@@ -10,37 +12,25 @@ export const validateStudent = (req, res, next) => {
     next();
 };
 
-export const validateGetStudentId = (re, res, next) => {
-   
+export const validateStudentId = (req, res, next) => {
+    const id = Number(req.params.id);
+
+    if (isNaN(id)) {
+        return res.status(400).json({
+            error: "Invalid student id"
+        });
+
+    
+    }
+
+    const student = students.find(s => s.id === id);
+
     if (!student) {
-        return res.status(404).json({ error: "Student not found" });
-    }
-}
-
-export const validateDeleteStudent = (re, res, next) => {
-
-    if (!deleted) {
-        return res.status(404).json({ error: "Student not found" });
+        return res.status(404).json({
+            error : "Id Does not Exist"
+        });
     }
 
-}
-
-export const validatePatchStudent = (re, res, next) => {
-
-    if (!updated) {
-        return res.status(404).json({ error: "Student not found" });
-    }
-
-}
-
-export const validatePutStudent = (re, res, next) => {
-
-    if (!replaced) {
-        return res.status(404).json({ error: "Student not found" });
-    }
-
-}
-
-
-
+    next();
+};
 
