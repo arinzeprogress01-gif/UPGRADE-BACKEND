@@ -19,10 +19,10 @@ router.get("/students/:id",validateStudentId, getStudent);
 
 router.post("/students", validateStudent, addStudent);
 
-router.delete("/students/:id", removeStudent);
+router.delete("/students/:id", validateStudentId, removeStudent);
 
-router.patch("/students/:id", patchStudent);
+router.patch("/students/:id",validateStudentId, patchStudent);
 
-router.put("/students/:id",validateStudent, putStudent);
+router.put("/students/:id",validateStudentId, validateStudent, putStudent);
 
 export default router;

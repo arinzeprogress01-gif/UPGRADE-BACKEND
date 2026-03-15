@@ -14,61 +14,54 @@ export const getStudents = (req, res) => {
 };
 
 export const getStudent = (req, res) => {
-    const id = Number(req.params.id);
    
-    const student = getStudentById(id);
+    const student = getStudentById(req.studentId);
     
     res.status(200).json(student);
 };
 
 export const addStudent = (req, res) => {
-    const { name, class: studentClass, payment } = req.body;
 
     const newStudent = createStudent({
-        name,
-        class: studentClass,
-        payment
+        name: req.body.name,
+        class: req.body.class,
+        payment: req.body.payment
     });
 
     res.status(201).json(newStudent);
 };
 
 export const removeStudent = (req, res) => {
-    const id = Number(req.params.id);
 
-    const deleted = deleteStudent(id);
+    const deleted = deleteStudent(req.studentId);
 
     if (!deleted) {
-        return res.status(404).json({ error: "Student not found" });
+        throw new Error("Student not found");
     }
 
     res.status(200).json({ message: "Student deleted" });
 };
 export const patchStudent = (req, res) => {
-    const id = Number(req.params.id);
     
-    const updated = updateStudentPartial(id, req.body);
+    const updated = updateStudentPartial(req.studentId, req.body);
 
     if (!updated) {
-        return res.status(404).json({ error: "Student not found" });
+        throw new Error("Student not found");
     }
 
     res.status(200).json(updated);
 };
 
 export const putStudent = (req, res) => {
-    const id = Number(req.params.id);
 
-    const { name, class: studentClass, payment } = req.body;
-
-    const replaced = replaceStudent(id, {
-        name,
-        class: studentClass,
-        payment
+    const replaced = replaceStudent(req.studentId, {
+        name: req.body.name,
+        class: req.body.class,
+        payment: req.body.payment
     });
 
     if (!replaced) {
-        return res.status(404).json({ error: "Student not found" });
+        throw new Error("Student not found");
     }
 
     res.status(200).json(replaced);

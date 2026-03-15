@@ -31,7 +31,6 @@ export const deleteStudent = (id) => {
 
 export const updateStudentPartial = (id , data) => {
     const student = students.find(s => s.id === id);
-
     if (!students) return null;
 
     Object.assign(student, data);

@@ -1,3 +1,4 @@
+import { request } from "express";
 import {students}  from "../data/studentDB.js";
 
 export const validateStudent = (req, res, next) => {
@@ -8,7 +9,11 @@ export const validateStudent = (req, res, next) => {
             error: "Invalid student data"
         });
     }
-
+    req.body = {
+        name,
+        class: studentClass,
+        payment
+    };
     next();
 };
 
@@ -22,7 +27,8 @@ export const validateStudentId = (req, res, next) => {
 
     
     }
-
+    req.studentId = id;
+    
     const student = students.find(s => s.id === id);
 
     if (!student) {
@@ -30,7 +36,6 @@ export const validateStudentId = (req, res, next) => {
             error : "Id Does not Exist"
         });
     }
-
-    next();
+    next(); 
 };
 
