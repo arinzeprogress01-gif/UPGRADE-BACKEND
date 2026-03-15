@@ -10,9 +10,7 @@ app.use(logger);
 
 app.use("/api", studentRoutes);
 
-app.use((req, res) => {
-    res.status(404).json({ error: "Not Found" });
-});
+app,use(errorHandler);
 
 const PORT = process.env.PORT || 5001;
 
