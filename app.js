@@ -16,9 +16,9 @@ app.use(express.json());
 loggerUtils.info("Server is starting...");
 app.use(logger);
 
-app.use(errorHandler);
-
 app.use("/api", studentRoutes);
+
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5001;
 
