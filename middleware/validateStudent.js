@@ -1,12 +1,15 @@
-import { request } from "express";
+import loggerUtils from '../utils/loggerUtils.js';
 import {students}  from "../data/studentDB.js";
 
 export const validateStudent = (req, res, next) => {
     const { name, class: studentClass, payment } = req.body;
 
     if (!name || !studentClass || typeof payment !== "boolean") {
+        loggerUtils.error(`Error: Invalid student data - ${JSON.stringify(req.body)}`);
+
         return res.status(400).json({
             error: "Invalid student data"
+        
         });
     }
     req.body = {
@@ -14,8 +17,12 @@ export const validateStudent = (req, res, next) => {
         class: studentClass,
         payment
     };
+
+    
     next();
 };
+
+
 
 export const validateStudentId = (req, res, next) => {
     const id = Number(req.params.id);
@@ -23,6 +30,8 @@ export const validateStudentId = (req, res, next) => {
     if (isNaN(id)) {
         return res.status(400).json({
             error: "Invalid student id"
+
+
         });
 
     
@@ -32,10 +41,16 @@ export const validateStudentId = (req, res, next) => {
     const student = students.find(s => s.id === id);
 
     if (!student) {
+
+        loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
+
         return res.status(404).json({
             error : "Id Does not Exist"
+
         });
+        
     }
+    
     next(); 
 };
 

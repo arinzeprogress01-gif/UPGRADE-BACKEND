@@ -2,7 +2,13 @@
 import loggerUtils from '../utils/loggerUtils.js';
 
 export const logger = (req, res, next) => {
-    loggerUtils.info(` [${req.method}] ${req.url}`);
+    const start = Date.now();
+
+    res.on('finish', () => {
+        const duration = Date.now() - start;
+        
+        loggerUtils.info(` [${req.method}] ${req.url} - ${res.statusCode} - ${duration}ms`);
+    });
 
     next();
 };
