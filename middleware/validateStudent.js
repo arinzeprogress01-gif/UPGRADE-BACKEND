@@ -1,5 +1,6 @@
 import loggerUtils from '../utils/loggerUtils.js';
 import {students}  from "../data/studentDB.js";
+import { createStudentSchema } from '../validators/studentValidator.js';
 
 export const validateStudent = (req, res, next) => {
     const { name, class: studentClass, payment } = req.body;
@@ -54,3 +55,14 @@ export const validateStudentId = (req, res, next) => {
     next(); 
 };
 
+export const validateStudentData = (req, res, next) => {
+    const { error } = createStudentSchema.validate(req.body);
+
+    if (error) {
+        loggerUtils.error(`Error: Invalid student data - ${error.details[0].message}`);
+        return res.status(400).json({
+            error: error.details[0].message
+        });
+    }
+    next();
+};
