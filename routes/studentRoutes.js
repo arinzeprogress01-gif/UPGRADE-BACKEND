@@ -10,7 +10,8 @@ import {
 } from "../controllers/studentController.js";
 
 import { validateStudentId, validateStudent } from "../middleware/validateStudent.js";
-import (validateStudentData) from "../middleware/validateStudent.js";
+
+import {validateStudentData} from  "../middleware/validateStudent.js";
 
 
 const router = express.Router();
