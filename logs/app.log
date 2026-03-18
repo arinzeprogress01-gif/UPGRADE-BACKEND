@@ -40,3 +40,39 @@
 2026-03-18T07:06:58.276Z [INFO]: Server running on port 5001
 2026-03-18T07:07:02.251Z [INFO]:  [GET] /students - 200 - 12ms
 2026-03-18T07:07:02.374Z [INFO]:  [GET] /favicon.ico - 404 - 4ms
+2026-03-18T07:12:32.123Z [INFO]: Server is starting...
+2026-03-18T07:12:32.147Z [ERROR]: PORT ERROR: PORT environment variable is not defined. Defaulting to 5001.
+2026-03-18T07:12:32.157Z [INFO]: Server running on port 5001
+2026-03-18T07:12:33.969Z [INFO]:  [GET] /students - 304 - 11ms
+2026-03-18T07:12:50.138Z [INFO]:  [GET] /students/1 - 200 - 4ms
+2026-03-18T07:13:46.263Z [INFO]: Server is starting...
+2026-03-18T07:13:46.274Z [INFO]: Server running on port 5001
+2026-03-18T07:13:49.264Z [INFO]:  [GET] /students/1 - 304 - 11ms
+2026-03-18T07:13:51.911Z [INFO]:  [GET] /students/1 - 304 - 2ms
+2026-03-18T07:13:53.191Z [INFO]:  [GET] /students/1 - 304 - 1ms
+2026-03-18T07:14:37.110Z [INFO]: Server is starting...
+2026-03-18T07:14:37.121Z [INFO]: Server running on port 5001
+2026-03-18T07:14:38.604Z [INFO]:  [GET] /students - 200 - 10ms
+2026-03-18T07:14:45.154Z [INFO]:  [GET] /students/1 - 200 - 2ms
+2026-03-18T07:15:14.922Z [INFO]: Server is starting...
+2026-03-18T07:15:14.937Z [INFO]: Server running on port 5001
+2026-03-18T07:15:16.384Z [INFO]:  [POST] /api/students/1 - 404 - 8ms
+2026-03-18T07:15:25.507Z [ERROR]: Error: Invalid student data - "id" is not allowed
+2026-03-18T07:15:25.516Z [INFO]:  [POST] /students - 400 - 16ms
+2026-03-18T07:16:57.214Z [INFO]: Server is starting...
+2026-03-18T07:16:57.229Z [INFO]: Server running on port 5001
+2026-03-18T07:17:45.520Z [INFO]: Server is starting...
+2026-03-18T07:17:45.547Z [INFO]: Server running on port 5001
+2026-03-18T07:17:47.303Z [INFO]:  [POST] /students - 201 - 12ms
+2026-03-18T07:17:55.928Z [INFO]:  [PUT] /api/students - 404 - 3ms
+2026-03-18T07:19:12.833Z [INFO]: Server is starting...
+2026-03-18T07:19:12.844Z [INFO]: Server running on port 5001
+2026-03-18T07:19:20.333Z [INFO]:  [PUT] /students/2 - 200 - 14ms
+2026-03-18T07:19:43.705Z [INFO]: Server is starting...
+2026-03-18T07:19:43.715Z [INFO]: Server running on port 5001
+2026-03-18T07:19:44.073Z [ERROR]: Error: Invalid student data - "name" must be a string
+2026-03-18T07:19:44.083Z [INFO]:  [PUT] /students/2 - 400 - 17ms
+2026-03-18T07:20:11.301Z [INFO]: Server is starting...
+2026-03-18T07:20:11.314Z [INFO]: Server running on port 5001
+2026-03-18T07:20:12.262Z [INFO]:  [PATCH] /students/2 - 200 - 11ms
+2026-03-18T07:20:24.407Z [INFO]:  [PATCH] /students/2 - 200 - 2ms
