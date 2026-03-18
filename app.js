@@ -2,6 +2,8 @@
 import dotenv from "dotenv";
 dotenv.config(); // initialize environment variables first
 
+import connectDB from "./config/db.js";
+
 // 2️⃣ Third-party modules
 import express from "express";
 
@@ -12,6 +14,8 @@ import { errorHandler } from "./middleware/errorHandler.js";
 
 // 4️⃣ Routes
 import studentRoutes from "./routes/studentRoutes.js";
+
+connectDB();
 
 // ----------------------------
 // App initialization

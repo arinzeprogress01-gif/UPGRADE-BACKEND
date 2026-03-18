@@ -76,3 +76,97 @@
 2026-03-18T07:20:11.314Z [INFO]: Server running on port 5001
 2026-03-18T07:20:12.262Z [INFO]:  [PATCH] /students/2 - 200 - 11ms
 2026-03-18T07:20:24.407Z [INFO]:  [PATCH] /students/2 - 200 - 2ms
+2026-03-18T07:31:34.640Z [INFO]: Server is starting...
+2026-03-18T07:31:34.666Z [INFO]: Server running on port 5001
+2026-03-18T07:31:35.652Z [INFO]:  [GET] /students - 200 - 11ms
+2026-03-18T21:20:22.158Z [INFO]: Server is starting...
+2026-03-18T21:20:22.176Z [INFO]: Server running on port 5001
+2026-03-18T21:20:25.765Z [ERROR]: Error: Invalid student id - 78
+2026-03-18T21:20:25.793Z [INFO]:  [DELETE] /students/78 - 404 - 30ms
+2026-03-18T21:20:34.826Z [ERROR]: Error: ID MUST BE A NUMBER - Y
+2026-03-18T21:20:34.829Z [INFO]:  [DELETE] /students/Y - 400 - 3ms
+2026-03-18T21:22:53.025Z [INFO]: Server is starting...
+2026-03-18T21:22:53.038Z [INFO]: Server running on port 5001
+2026-03-18T21:22:54.492Z [INFO]:  [PUT] /students/2 - 200 - 18ms
+2026-03-18T21:23:01.349Z [ERROR]: Unexpected token '
+', ..."ent": fals
+  
+}" is not valid JSON
+2026-03-18T21:23:33.040Z [INFO]: Server is starting...
+2026-03-18T21:23:33.053Z [INFO]: Server running on port 5001
+2026-03-18T21:23:35.017Z [ERROR]: Error: Invalid student data - "payment" must be a boolean
+2026-03-18T21:23:35.029Z [INFO]:  [PUT] /students/2 - 400 - 19ms
+2026-03-18T21:24:33.352Z [INFO]: Server is starting...
+2026-03-18T21:24:33.373Z [INFO]: Server running on port 5001
+2026-03-18T21:24:33.788Z [ERROR]: Error: Invalid student data - "payment" must be a boolean
+2026-03-18T21:24:33.798Z [INFO]:  [PUT] /students/8 - 400 - 17ms
+2026-03-18T21:24:40.313Z [ERROR]: Error: Invalid student id - 8
+2026-03-18T21:24:40.315Z [INFO]:  [PUT] /students/8 - 404 - 3ms
+2026-03-18T21:38:08.196Z [INFO]: Server is starting...
+2026-03-18T21:38:08.213Z [INFO]: Server running on port 5001
+2026-03-18T21:38:12.993Z [ERROR]: Error: Invalid student id - 8
+2026-03-18T21:38:13.010Z [INFO]:  [PUT] /students/8 - 404 - 22ms
+2026-03-18T21:39:05.746Z [INFO]: Server is starting...
+2026-03-18T21:39:05.764Z [INFO]: Server running on port 5001
+2026-03-18T21:39:06.941Z [INFO]:  [DELETE] /students/1 - 200 - 9ms
+2026-03-18T21:42:19.930Z [INFO]: Server is starting...
+2026-03-18T21:42:19.943Z [INFO]: Server running on port 5001
+2026-03-18T21:42:22.337Z [ERROR]: loggerUtils is not defined
+2026-03-18T21:42:22.347Z [INFO]:  [DELETE] /api/students/1 - 500 - 12ms
+2026-03-18T21:42:29.712Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:42:29.714Z [INFO]:  [DELETE] /students/1 - 404 - 3ms
+2026-03-18T21:42:50.641Z [INFO]: Server is starting...
+2026-03-18T21:42:50.655Z [INFO]: Server running on port 5001
+2026-03-18T21:42:52.677Z [ERROR]: loggerUtils is not defined
+2026-03-18T21:42:52.688Z [INFO]:  [DELETE] /api/students/1 - 500 - 15ms
+2026-03-18T21:43:11.093Z [INFO]: Server is starting...
+2026-03-18T21:43:11.110Z [INFO]: Server running on port 5001
+2026-03-18T21:43:58.113Z [INFO]: Server is starting...
+2026-03-18T21:43:58.124Z [INFO]: Server running on port 5001
+2026-03-18T21:44:00.810Z [ERROR]: loggers.info is not a function
+2026-03-18T21:44:00.819Z [INFO]:  [DELETE] /api/students/1 - 500 - 11ms
+2026-03-18T21:44:04.155Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:04.159Z [INFO]:  [DELETE] /students/1 - 404 - 4ms
+2026-03-18T21:44:06.164Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:06.166Z [INFO]:  [DELETE] /students/1 - 404 - 2ms
+2026-03-18T21:44:07.061Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:07.063Z [INFO]:  [DELETE] /students/1 - 404 - 2ms
+2026-03-18T21:44:12.653Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:12.657Z [INFO]:  [DELETE] /students/1 - 404 - 4ms
+2026-03-18T21:44:13.937Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:13.940Z [INFO]:  [DELETE] /students/1 - 404 - 3ms
+2026-03-18T21:45:09.621Z [INFO]: Server is starting...
+2026-03-18T21:45:09.637Z [INFO]: Server running on port 5001
+2026-03-18T21:45:13.666Z [ERROR]: loggerUtils is not defined
+2026-03-18T21:45:13.674Z [INFO]:  [DELETE] /api/students/2 - 500 - 11ms
+2026-03-18T21:45:25.721Z [ERROR]: Error: Invalid student id - 2
+2026-03-18T21:45:25.723Z [INFO]:  [GET] /students/2 - 404 - 2ms
+2026-03-18T21:45:40.801Z [INFO]: Server is starting...
+2026-03-18T21:45:40.812Z [INFO]: Server running on port 5001
+2026-03-18T21:45:43.300Z [ERROR]: loggers.info is not a function
+2026-03-18T21:45:43.310Z [INFO]:  [GET] /api/students - 500 - 12ms
+2026-03-18T21:45:44.553Z [ERROR]: loggers.info is not a function
+2026-03-18T21:45:44.555Z [INFO]:  [GET] /api/students - 500 - 3ms
+2026-03-18T21:48:47.008Z [INFO]: Server is starting...
+2026-03-18T21:48:47.026Z [INFO]: Server running on port 5001
+2026-03-18T21:48:50.097Z [INFO]: All students retrieved successfully
+2026-03-18T21:48:50.108Z [INFO]:  [GET] /students - 200 - 10ms
+2026-03-18T21:49:27.788Z [INFO]: Server is starting...
+2026-03-18T21:49:27.845Z [INFO]: Server running on port 5001
+2026-03-18T21:49:29.480Z [ERROR]: Error: Invalid student id - 66
+2026-03-18T21:49:29.490Z [INFO]:  [DELETE] /students/66 - 404 - 11ms
+2026-03-18T21:49:35.381Z [INFO]: Student with ID 6 deleted successfully
+2026-03-18T21:49:35.383Z [INFO]:  [DELETE] /students/6 - 200 - 2ms
+2026-03-18T22:50:10.924Z [INFO]: Server is starting...
+2026-03-18T22:50:10.949Z [INFO]: Server running on port 5001
+2026-03-18T22:52:01.183Z [INFO]: Server is starting...
+2026-03-18T22:52:01.196Z [INFO]: Server running on port 5001
+2026-03-18T22:53:56.273Z [INFO]: Server is starting...
+2026-03-18T22:53:56.293Z [INFO]: Server running on port 5001
+2026-03-18T22:58:25.337Z [INFO]: Server is starting...
+2026-03-18T22:58:25.352Z [INFO]: Server running on port 5001
+2026-03-18T23:07:57.754Z [INFO]: Server is starting...
+2026-03-18T23:07:57.767Z [INFO]: Server running on port 5001
+2026-03-18T23:08:30.879Z [INFO]: Server is starting...
+2026-03-18T23:08:30.893Z [INFO]: Server running on port 5001
+2026-03-18T23:08:32.374Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net

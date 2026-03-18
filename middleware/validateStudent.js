@@ -10,8 +10,9 @@ export const validateStudent = (req, res, next) => {
         loggerUtils.error(`Error: Invalid student data - ${JSON.stringify(req.body)}`);
 
         return res.status(400).json({
+
             error: "Invalid student data"
-        
+            
         });
     }
     req.body = {
@@ -30,6 +31,7 @@ export const validateStudentId = (req, res, next) => {
     const id = Number(req.params.id);
 
     if (isNaN(id)) {
+        loggerUtils.error(`Error: ID MUST BE A NUMBER - ${req.params.id}`);
         return res.status(400).json({
             error: "Invalid student id"
 

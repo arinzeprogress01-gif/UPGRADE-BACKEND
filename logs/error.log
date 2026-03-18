@@ -4,3 +4,27 @@
 2026-03-18T07:12:32.147Z [ERROR]: PORT ERROR: PORT environment variable is not defined. Defaulting to 5001.
 2026-03-18T07:15:25.507Z [ERROR]: Error: Invalid student data - "id" is not allowed
 2026-03-18T07:19:44.073Z [ERROR]: Error: Invalid student data - "name" must be a string
+2026-03-18T21:20:25.765Z [ERROR]: Error: Invalid student id - 78
+2026-03-18T21:20:34.826Z [ERROR]: Error: ID MUST BE A NUMBER - Y
+2026-03-18T21:23:01.349Z [ERROR]: Unexpected token '
+', ..."ent": fals
+  
+}" is not valid JSON
+2026-03-18T21:23:35.017Z [ERROR]: Error: Invalid student data - "payment" must be a boolean
+2026-03-18T21:24:33.788Z [ERROR]: Error: Invalid student data - "payment" must be a boolean
+2026-03-18T21:24:40.313Z [ERROR]: Error: Invalid student id - 8
+2026-03-18T21:38:12.993Z [ERROR]: Error: Invalid student id - 8
+2026-03-18T21:42:22.337Z [ERROR]: loggerUtils is not defined
+2026-03-18T21:42:29.712Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:42:52.677Z [ERROR]: loggerUtils is not defined
+2026-03-18T21:44:00.810Z [ERROR]: loggers.info is not a function
+2026-03-18T21:44:04.155Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:06.164Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:07.061Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:12.653Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:44:13.937Z [ERROR]: Error: Invalid student id - 1
+2026-03-18T21:45:13.666Z [ERROR]: loggerUtils is not defined
+2026-03-18T21:45:25.721Z [ERROR]: Error: Invalid student id - 2
+2026-03-18T21:45:43.300Z [ERROR]: loggers.info is not a function
+2026-03-18T21:45:44.553Z [ERROR]: loggers.info is not a function
+2026-03-18T21:49:29.480Z [ERROR]: Error: Invalid student id - 66
