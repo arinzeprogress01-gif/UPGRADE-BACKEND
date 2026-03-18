@@ -19,7 +19,7 @@ router.get("/students", getStudents);
 
 router.get("/students/:id",validateStudentId, getStudent);
 
-router.post("/students", validateStudentData, addStudent);
+router.post("/students", validateStudentData,validateStudent, addStudent);
 
 router.delete("/students/:id", validateStudentId, removeStudent);
 

@@ -1,25 +1,40 @@
+// 1️⃣ Environment
+import dotenv from "dotenv";
+dotenv.config(); // initialize environment variables first
+
+// 2️⃣ Third-party modules
 import express from "express";
-import studentRoutes from "./routes/studentRoutes.js";
+
+// 3️⃣ Utilities / middleware
+import loggerUtils from "./utils/loggerUtils.js";
+import { requestLogger } from "./middleware/requestLogger.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 
-import loggerUtils from "./utils/loggerUtils.js";
+// 4️⃣ Routes
+import studentRoutes from "./routes/studentRoutes.js";
 
-import dotenv from "dotenv";
-
-dotenv.config()
-
+// ----------------------------
+// App initialization
+// ----------------------------
 const app = express();
 
+// Parse incoming JSON
 app.use(express.json());
 
+// Request logging middleware
+app.use(requestLogger);
+
+// API routes
 app.use("/api", studentRoutes);
 
-loggerUtils.info("Server is starting...");
-
+// Error handling middleware (always after routes)
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5001;
+// Log server startup
+loggerUtils.info("Server is starting...");
 
+// Start server
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    loggerUtils.info(`Server running on port ${PORT}`);
 });

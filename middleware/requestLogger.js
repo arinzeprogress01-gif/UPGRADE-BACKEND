@@ -1,7 +1,7 @@
 
 import loggerUtils from '../utils/loggerUtils.js';
 
-export const logger = (req, res, next) => {
+export const requestLogger = (req, res, next) => {
     const start = Date.now();
 
     res.on('finish', () => {
