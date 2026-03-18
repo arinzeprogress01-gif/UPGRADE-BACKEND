@@ -7,7 +7,7 @@ import {
     replaceStudent
 } from "../services/studentService.js";
 
-export const getStudents = (req, res) => {
+export const getStudents = (_req, res) => {
     const students = getAllStudents();
         
     res.status(200).json(students);
@@ -32,11 +32,10 @@ export const addStudent = (req, res) => {
 };
 
 export const removeStudent = (req, res) => {
-
     const deleted = deleteStudent(req.studentId);
 
     if (!deleted) {
-        throw new Error("Student not found");
+        return res.status(404).json({ message: "Student not found" });
     }
 
     res.status(200).json({ message: "Student deleted" });
@@ -46,7 +45,7 @@ export const patchStudent = (req, res) => {
     const updated = updateStudentPartial(req.studentId, req.body);
 
     if (!updated) {
-        throw new Error("Student not found");
+        return res.status(404).json({ message: "Student not found" });
     }
 
     res.status(200).json(updated);
@@ -61,7 +60,7 @@ export const putStudent = (req, res) => {
     });
 
     if (!replaced) {
-        throw new Error("Student not found");
+        return res.status(404).json({ message: "Student not found" });
     }
 
     res.status(200).json(replaced);

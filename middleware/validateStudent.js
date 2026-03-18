@@ -1,6 +1,7 @@
 import loggerUtils from '../utils/loggerUtils.js';
-import {students}  from "../data/studentDB.js";
-import { createStudentSchema } from '../validators/studentValidator.js';
+import students from "../data/studentDB.js";
+import { createStudentSchema } from "../validators/studentValidator.js";
+
 
 export const validateStudent = (req, res, next) => {
     const { name, class: studentClass, payment } = req.body;
