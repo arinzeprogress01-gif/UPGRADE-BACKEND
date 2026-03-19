@@ -260,3 +260,95 @@
 2026-03-19T04:13:45.381Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8 - 400 - 2ms
 2026-03-19T04:13:55.722Z [ERROR]: Invalid MongoDB hh
 2026-03-19T04:13:55.725Z [INFO]:  [GET] /students/hh - 400 - 3ms
+2026-03-19T05:40:51.592Z [INFO]: Server is starting...
+2026-03-19T05:40:51.607Z [INFO]: Server running on port 5001
+2026-03-19T05:40:53.566Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T05:40:56.857Z [INFO]:  [GET] /api/auth/register - 404 - 8ms
+2026-03-19T05:41:11.607Z [INFO]:  [GET] /api/auth/register - 404 - 1ms
+2026-03-19T05:41:36.138Z [INFO]: Server is starting...
+2026-03-19T05:41:36.152Z [INFO]: Server running on port 5001
+2026-03-19T05:41:37.710Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T05:41:40.119Z [INFO]:  [POST] /register - 500 - 358ms
+2026-03-19T05:41:46.390Z [INFO]:  [POST] /register - 500 - 337ms
+2026-03-19T05:43:00.994Z [INFO]: Server is starting...
+2026-03-19T05:43:01.012Z [INFO]: Server running on port 5001
+2026-03-19T05:43:03.047Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T05:43:05.467Z [INFO]:  [POST] /register - 500 - 358ms
+2026-03-19T05:44:11.477Z [INFO]: Server is starting...
+2026-03-19T05:44:11.487Z [INFO]: Server running on port 5001
+2026-03-19T05:44:13.724Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T05:44:15.066Z [INFO]:  [POST] /register - 500 - 350ms
+2026-03-19T05:45:25.452Z [INFO]: Server is starting...
+2026-03-19T05:45:25.551Z [INFO]: Server running on port 5001
+2026-03-19T05:45:27.435Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T05:45:28.733Z [INFO]:  [POST] /register - 500 - 366ms
+2026-03-19T05:45:30.419Z [INFO]:  [POST] /register - 500 - 372ms
+2026-03-19T05:52:16.717Z [INFO]: Server is starting...
+2026-03-19T05:52:16.739Z [INFO]: Server running on port 5001
+2026-03-19T05:52:18.506Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T05:52:21.359Z [INFO]:  [POST] /register - 500 - 429ms
+2026-03-19T05:52:51.084Z [INFO]: Server is starting...
+2026-03-19T05:52:51.105Z [INFO]: Server running on port 5001
+2026-03-19T05:52:52.797Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T05:52:55.267Z [INFO]:  [POST] /register - 500 - 424ms
+2026-03-19T05:53:19.604Z [INFO]: Server is starting...
+2026-03-19T05:53:19.617Z [INFO]: Server running on port 5001
+2026-03-19T05:53:21.796Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-19T05:53:23.158Z [INFO]:  [POST] /register - 500 - 388ms
+2026-03-19T05:56:30.324Z [INFO]: Server is starting...
+2026-03-19T05:56:30.342Z [INFO]: Server running on port 5001
+2026-03-19T05:56:32.151Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T05:56:35.149Z [INFO]:  [POST] /register - 500 - 455ms
+2026-03-19T05:56:40.692Z [INFO]:  [POST] /register - 500 - 300ms
+2026-03-19T06:01:39.569Z [INFO]: Server is starting...
+2026-03-19T06:01:39.599Z [INFO]: Server running on port 5001
+2026-03-19T06:01:41.252Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T06:01:42.805Z [INFO]:  [POST] /register - 201 - 1937ms
+2026-03-19T06:03:03.216Z [INFO]: Server is starting...
+2026-03-19T06:03:03.234Z [INFO]: Server running on port 5001
+2026-03-19T06:03:05.198Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T06:03:09.943Z [INFO]:  [POST] /register - 400 - 190ms
+2026-03-19T06:03:13.929Z [INFO]:  [GET] /api/auth/register - 404 - 2ms
+2026-03-19T06:03:15.299Z [INFO]:  [GET] /api/auth/register - 404 - 1ms
+2026-03-19T06:03:38.473Z [INFO]: Server is starting...
+2026-03-19T06:03:38.490Z [INFO]: Server running on port 5001
+2026-03-19T06:03:40.238Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T06:03:45.035Z [INFO]:  [POST] /register - 500 - 523ms
+2026-03-19T06:03:57.327Z [INFO]:  [POST] /register - 500 - 514ms
+2026-03-19T06:06:55.114Z [INFO]: Server is starting...
+2026-03-19T06:06:55.129Z [INFO]: Server running on port 5001
+2026-03-19T06:06:56.777Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T06:07:00.561Z [INFO]:  [POST] /register - 500 - 580ms
+2026-03-19T06:23:37.239Z [INFO]: Server is starting...
+2026-03-19T06:23:37.271Z [INFO]: Server running on port 5001
+2026-03-19T06:23:39.117Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-19T06:23:47.619Z [INFO]:  [POST] /register - 201 - 718ms
+2026-03-19T06:23:58.864Z [INFO]:  [POST] /register - 400 - 145ms
+2026-03-19T06:24:02.921Z [INFO]:  [POST] /register - 400 - 158ms
+2026-03-19T06:34:55.180Z [INFO]: Server is starting...
+2026-03-19T06:34:55.195Z [INFO]: Server running on port 5001
+2026-03-19T06:34:57.118Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-19T06:34:59.429Z [INFO]: USER CREATED SUCCESSFULLY {
+  name: 'Ayuba Promise',
+  email: 'ayubapromise123@gmail.com',
+  password: '$2b$10$fQGG6Jnh7AidruNT8Q/rx.pb1y8V9L9SdIxJKBvrT7CpqzaWupO6O',
+  _id: new ObjectId('69bb9913544ffdfe5e5e1b0f'),
+  createdAt: 2026-03-19T06:34:59.229Z,
+  updatedAt: 2026-03-19T06:34:59.229Z,
+  __v: 0
+}
+2026-03-19T06:34:59.432Z [INFO]:  [POST] /register - 201 - 592ms
+2026-03-19T06:38:55.351Z [INFO]: Server is starting...
+2026-03-19T06:38:55.373Z [INFO]: Server running on port 5001
+2026-03-19T06:38:57.462Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-19T06:39:04.858Z [INFO]: USER CREATED SUCCESSFULLY 69bb9a089937b1dd44da9d41-miracle123@gmail.com
+2026-03-19T06:39:04.860Z [INFO]:  [POST] /register - 201 - 545ms
+2026-03-19T06:50:04.571Z [INFO]: Server is starting...
+2026-03-19T06:50:04.597Z [INFO]: Server running on port 5001
+2026-03-19T06:50:06.307Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-19T06:50:13.973Z [INFO]: USER CREATED SUCCESSFULLY 69bb9ca50953597d6d82fb00-medinah123@gmail.com
+2026-03-19T06:50:13.980Z [INFO]:  [POST] /register - 201 - 599ms
+2026-03-19T07:11:24.142Z [INFO]: Server is starting...
+2026-03-19T07:11:24.162Z [INFO]: Server running on port 5001
+2026-03-19T07:11:27.151Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T07:11:29.054Z [INFO]:  [POST] /login - 200 - 372ms

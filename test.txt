@@ -366,3 +366,7 @@ export const putStudent = (req, res) => {
     res.status(200).json(replaced);
 };
 
+{
+  "message": "Login successful",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmI5Y2E1MDk1MzU5N2Q2ZDgyZmIwMCIsImlhdCI6MTc3MzkwNDI4OSwiZXhwIjoxNzczOTkwNjg5fQ.8ECnLewssRfpxgSNhyRCyR6vR0x2lrR2dF3nznaaNqU"
+}

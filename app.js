@@ -13,6 +13,7 @@ import { requestLogger } from "./middleware/requestLogger.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 
 // 4️⃣ Routes
+import authRoutes from "./routes/authRoutes.js";
 import studentRoutes from "./routes/studentRoutes.js";
 
 connectDB();
@@ -30,6 +31,7 @@ app.use(requestLogger);
 
 // API routes
 app.use("/api", studentRoutes);
+app.use("/api/auth", authRoutes);
 
 // Error handling middleware (always after routes)
 app.use(errorHandler);
