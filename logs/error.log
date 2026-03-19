@@ -28,3 +28,12 @@
 2026-03-18T21:45:43.300Z [ERROR]: loggers.info is not a function
 2026-03-18T21:45:44.553Z [ERROR]: loggers.info is not a function
 2026-03-18T21:49:29.480Z [ERROR]: Error: Invalid student id - 66
+2026-03-19T02:17:43.801Z [ERROR]: Error connecting to MongoDB: querySrv ECONNREFUSED _mongodb._tcp.thehiggshydrogen.uorm8ml.mongodb.net
+2026-03-19T02:22:38.172Z [ERROR]: Expected ',' or '}' after property value in JSON at position 29 (line 3 column 3)
+2026-03-19T02:22:51.252Z [ERROR]: Expected double-quoted property name in JSON at position 70 (line 5 column 1)
+2026-03-19T03:24:56.824Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:25:02.910Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:25:40.262Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:26:36.881Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:56:45.023Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:56:46.283Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')

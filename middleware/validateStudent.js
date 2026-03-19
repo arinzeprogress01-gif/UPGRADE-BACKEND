@@ -1,7 +1,8 @@
-import loggerUtils from '../utils/loggerUtils.js';
-import students from "../data/studentDB.js";
-import { createStudentSchema } from "../validators/studentValidator.js";
+import mongoose from "mongoose";
 
+import loggerUtils from '../utils/loggerUtils.js';
+
+import { createStudentSchema } from "../validators/studentValidator.js";
 
 export const validateStudent = (req, res, next) => {
     const { name, class: studentClass, payment } = req.body;
@@ -12,7 +13,7 @@ export const validateStudent = (req, res, next) => {
         return res.status(400).json({
 
             error: "Invalid student data"
-            
+
         });
     }
     req.body = {
@@ -28,35 +29,21 @@ export const validateStudent = (req, res, next) => {
 
 
 export const validateStudentId = (req, res, next) => {
-    const id = Number(req.params.id);
+    const id = req.params.id;
+    
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        loggerUtils.error(`Invalid MongoDB ${id}`);
 
-    if (isNaN(id)) {
-        loggerUtils.error(`Error: ID MUST BE A NUMBER - ${req.params.id}`);
         return res.status(400).json({
-            error: "Invalid student id"
-
-
+            error: "Invalid Student ID"
         });
+    };
 
-    
-    }
     req.studentId = id;
-    
-    const student = students.find(s => s.id === id);
-
-    if (!student) {
-
-        loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
-
-        return res.status(404).json({
-            error : "Id Does not Exist"
-
-        });
-        
-    }
-    
     next(); 
 };
+
+
 
 export const validateStudentData = (req, res, next) => {
     const { error } = createStudentSchema.validate(req.body);

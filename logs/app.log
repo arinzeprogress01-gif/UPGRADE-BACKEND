@@ -170,3 +170,84 @@
 2026-03-18T23:08:30.879Z [INFO]: Server is starting...
 2026-03-18T23:08:30.893Z [INFO]: Server running on port 5001
 2026-03-18T23:08:32.374Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-19T02:17:43.780Z [INFO]: Server is starting...
+2026-03-19T02:17:43.792Z [INFO]: Server running on port 5001
+2026-03-19T02:17:43.801Z [ERROR]: Error connecting to MongoDB: querySrv ECONNREFUSED _mongodb._tcp.thehiggshydrogen.uorm8ml.mongodb.net
+2026-03-19T02:19:39.745Z [INFO]: Server is starting...
+2026-03-19T02:19:39.763Z [INFO]: Server running on port 5001
+2026-03-19T02:19:41.465Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T02:20:48.141Z [INFO]: Server is starting...
+2026-03-19T02:20:48.155Z [INFO]: Server running on port 5001
+2026-03-19T02:20:50.111Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T02:20:52.556Z [INFO]: All students retrieved successfully
+2026-03-19T02:20:52.567Z [INFO]:  [GET] /students - 200 - 166ms
+2026-03-19T02:22:32.132Z [INFO]: Server is starting...
+2026-03-19T02:22:32.146Z [INFO]: Server running on port 5001
+2026-03-19T02:22:33.906Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T02:22:38.172Z [ERROR]: Expected ',' or '}' after property value in JSON at position 29 (line 3 column 3)
+2026-03-19T02:22:51.252Z [ERROR]: Expected double-quoted property name in JSON at position 70 (line 5 column 1)
+2026-03-19T02:24:44.711Z [INFO]: Server is starting...
+2026-03-19T02:24:44.723Z [INFO]: Server running on port 5001
+2026-03-19T02:24:46.291Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T02:24:47.282Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b created successfully
+2026-03-19T02:24:47.289Z [INFO]:  [POST] /students - 201 - 211ms
+2026-03-19T02:33:33.209Z [INFO]: Server is starting...
+2026-03-19T02:33:33.226Z [INFO]: Server running on port 5001
+2026-03-19T02:33:35.029Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T02:33:35.984Z [INFO]: Student with ID 69bb607fbb3fb11275495575 created successfully
+2026-03-19T02:33:35.994Z [INFO]:  [POST] /students - 201 - 201ms
+2026-03-19T02:34:07.901Z [INFO]: Server is starting...
+2026-03-19T02:34:07.915Z [INFO]: Server running on port 5001
+2026-03-19T02:34:09.484Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T02:34:10.894Z [INFO]: Student with ID 69bb60a27c61757dd6a013c6 created successfully
+2026-03-19T02:34:10.903Z [INFO]:  [POST] /students - 201 - 208ms
+2026-03-19T02:35:04.027Z [INFO]: Server is starting...
+2026-03-19T02:35:04.045Z [INFO]: Server running on port 5001
+2026-03-19T02:35:05.938Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-19T02:35:08.159Z [INFO]: All students retrieved successfully
+2026-03-19T02:35:08.169Z [INFO]:  [GET] /students - 200 - 178ms
+2026-03-19T03:22:00.363Z [INFO]: Server is starting...
+2026-03-19T03:22:00.382Z [INFO]: Server running on port 5001
+2026-03-19T03:22:02.098Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T03:22:07.589Z [INFO]: All students retrieved successfully
+2026-03-19T03:22:07.618Z [INFO]:  [GET] /students - 200 - 867ms
+2026-03-19T03:22:33.146Z [INFO]: Server is starting...
+2026-03-19T03:22:33.165Z [INFO]: Server running on port 5001
+2026-03-19T03:22:34.957Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T03:22:36.285Z [INFO]: Student with ID undefined retrieved successfully
+2026-03-19T03:22:36.292Z [INFO]:  [GET] /students/69bb60a27c61757dd6a013c6 - 200 - 208ms
+2026-03-19T03:22:43.220Z [INFO]: Student with ID undefined retrieved successfully
+2026-03-19T03:22:43.222Z [INFO]:  [GET] /students/69bb60a27c61757dd6a013c6 - 200 - 156ms
+2026-03-19T03:24:53.486Z [INFO]: Server is starting...
+2026-03-19T03:24:53.511Z [INFO]: Server running on port 5001
+2026-03-19T03:24:55.245Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T03:24:56.824Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:24:56.835Z [INFO]:  [GET] /api/students/69bb60a27c61757dd6a013c6 - 500 - 13ms
+2026-03-19T03:25:02.910Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:25:02.916Z [INFO]:  [GET] /api/students/69bb60a27c61757dd6a013c6 - 500 - 8ms
+2026-03-19T03:25:32.569Z [INFO]: Server is starting...
+2026-03-19T03:25:32.591Z [INFO]: Server running on port 5001
+2026-03-19T03:25:34.314Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T03:25:35.629Z [INFO]: All students retrieved successfully
+2026-03-19T03:25:35.636Z [INFO]:  [GET] /students - 200 - 246ms
+2026-03-19T03:25:40.262Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:25:40.264Z [INFO]:  [GET] /api/students/1 - 500 - 4ms
+2026-03-19T03:25:49.875Z [INFO]: All students retrieved successfully
+2026-03-19T03:25:49.877Z [INFO]:  [GET] /students - 200 - 173ms
+2026-03-19T03:26:33.049Z [INFO]: Server is starting...
+2026-03-19T03:26:33.068Z [INFO]: Server running on port 5001
+2026-03-19T03:26:34.801Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T03:26:36.881Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:26:36.892Z [INFO]:  [GET] /api/students/69bb5e6fc5f1497933fe8a8b - 500 - 13ms
+2026-03-19T03:56:41.811Z [INFO]: Server is starting...
+2026-03-19T03:56:41.842Z [INFO]: Server running on port 5001
+2026-03-19T03:56:43.758Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T03:56:45.023Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:56:45.033Z [INFO]:  [GET] /api/students/69bb5e6fc5f1497933fe8a8b - 500 - 31ms
+2026-03-19T03:56:46.283Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
+2026-03-19T03:56:46.285Z [INFO]:  [GET] /api/students/69bb5e6fc5f1497933fe8a8b - 500 - 3ms
+2026-03-19T03:57:42.264Z [INFO]: Server is starting...
+2026-03-19T03:57:42.281Z [INFO]: Server running on port 5001
+2026-03-19T03:57:44.201Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-19T03:57:49.781Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b retrieved successfully
+2026-03-19T03:57:49.797Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 200 - 256ms

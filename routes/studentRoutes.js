@@ -12,19 +12,18 @@ import {
 import { validateStudentId, validateStudent, validateStudentData} from "../middleware/validateStudent.js";
 
 
-
 const router = express.Router();
 
 router.get("/students", getStudents);
 
-router.get("/students/:id",validateStudentId, getStudent);
+router.get("/students/:id", validateStudentId, getStudent);
 
 router.post("/students", validateStudentData,validateStudent, addStudent);
 
 router.delete("/students/:id", validateStudentId, removeStudent);
 
-router.patch("/students/:id",validateStudentId, patchStudent);
+router.patch("/students/:id", validateStudentId, patchStudent);
 
-router.put("/students/:id",validateStudentData,validateStudentId, validateStudent, putStudent);
+router.put("/students/:id", validateStudentData, validateStudentId, validateStudent, putStudent);
 
 export default router;

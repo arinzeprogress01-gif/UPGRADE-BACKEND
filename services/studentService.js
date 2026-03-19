@@ -1,49 +1,25 @@
-import students from "../data/studentDB.js";
+import Student from "../models/Students.js";
 
-export const getAllStudents = () => {
-    return students;
+export const getAllStudents = async () => {
+    return await Student.find();
 };
 
-export const getStudentById = (id) => {
-    return students.find(student => student.id === id);
+export const getStudentById = async (id) => {
+    return await Student.findById(id);
 };
 
-export const createStudent = (data) => {
-    const newStudent = {
-        id: students.length + 1,
-        ...data
-    };
-
-    students.push(newStudent);
-
-    return newStudent;
+export const createStudent = async (data) => {
+    return await Student.create(data)
 };
 
-export const deleteStudent = (id) => {
-    const index = students.findIndex(student => student.id === id);
-
-    if (index === -1) return null;
-
-    const deleted = students.splice(index, 1);
-
-    return deleted[0];
+export const deleteStudent = async (id) => {
+    return await Student.findByIdAndDelete(id);
 };
 
-export const updateStudentPartial = (id , data) => {
-    const student = students.find(s => s.id === id);
-    if (!student) return null;
+export const updateStudentPartial = async (id, data) => {
+    return await Student.findByIdAndUpdate(id, data, { new: true });
+};
 
-    Object.assign(student, data);
-
-    return student;
-}
-
-export const replaceStudent = (id, data) => {
-    const index = students.findIndex(s=> s.id === id);
-
-    if (index === -1) return null;
-
-    students[index] = { id, ...data };
-
-    return students[index];
+export const replaceStudent = async (id, data) => {
+    return await Student.findByIdAndUpdate(id, data, { new: true });
 }
