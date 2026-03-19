@@ -251,3 +251,12 @@
 2026-03-19T03:57:44.201Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
 2026-03-19T03:57:49.781Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b retrieved successfully
 2026-03-19T03:57:49.797Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 200 - 256ms
+2026-03-19T04:13:33.867Z [INFO]: Server is starting...
+2026-03-19T04:13:33.881Z [INFO]: Server running on port 5001
+2026-03-19T04:13:35.714Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-19T04:13:42.769Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b retrieved successfully
+2026-03-19T04:13:42.789Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 200 - 192ms
+2026-03-19T04:13:45.380Z [ERROR]: Invalid MongoDB 69bb5e6fc5f1497933fe8a8
+2026-03-19T04:13:45.381Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8 - 400 - 2ms
+2026-03-19T04:13:55.722Z [ERROR]: Invalid MongoDB hh
+2026-03-19T04:13:55.725Z [INFO]:  [GET] /students/hh - 400 - 3ms

@@ -32,6 +32,13 @@ export const getStudent = async (req, res) => {
     try{
         
         const student = await getStudentById(req.studentId);
+
+        if (!student) {
+            loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
+            return res.status(404).json({
+                error : "Id Does not Exist"
+            });
+        }
         loggerUtils.info(`Student with ID ${req.studentId} retrieved successfully`);
 
         return res.status(200).json(student);
@@ -73,9 +80,17 @@ export const removeStudent = async (req, res) => {
         
         const deleted = await deleteStudent(req.studentId);
 
+        if (!deleted) {
+            loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
+            return res.status(404).json({
+                error : "Id Does not Exist"
+            });
+        }
+
         loggerUtils.info(`Student with ID ${req.studentId} deleted successfully`);
 
         return res.status(200).json({ message: "Student deleted" });
+
     }catch(error){
         loggerUtils.error("Error occurred while deleting student");
         return res.status(500).json({ error: "Internal Server Error. Failed to delete student" });
@@ -89,6 +104,13 @@ export const patchStudent = async (req, res) => {
     
     try{
         const updated = await updateStudentPartial(req.studentId, req.body);
+
+        if (!updated) {
+            loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
+            return res.status(404).json({
+                error : "Id Does not Exist"
+            });
+        }
 
         loggerUtils.info(`Student with ID ${req.studentId} updated successfully`);
         return res.status(200).json(updated);
@@ -110,6 +132,13 @@ export const putStudent = async (req, res) => {
         class: req.body.class,
         payment: req.body.payment
     });
+
+        if (!replaced) {
+            loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
+            return res.status(404).json({
+                error : "Id Does not Exist"
+            });
+        }
         loggerUtils.info(`Student with ID ${req.studentId} replaced successfully`);
         return res.status(200).json(replaced);
 
