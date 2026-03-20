@@ -7,7 +7,7 @@ import { createStudentSchema } from "../validators/studentValidator.js";
 export const validateStudent = (req, res, next) => {
     const { name, class: studentClass, payment } = req.body;
 
-    if (!name || !studentClass || typeof payment !== "boolean") {
+    if (!name || !studentClass || !course || !age || !gender) {
         loggerUtils.error(`Error: Invalid student data - ${JSON.stringify(req.body)}`);
 
         return res.status(400).json({
@@ -19,7 +19,9 @@ export const validateStudent = (req, res, next) => {
     req.body = {
         name,
         class: studentClass,
-        payment
+        course,
+        age,
+        gender
     };
 
     

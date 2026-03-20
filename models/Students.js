@@ -1,3 +1,4 @@
+import { number } from "joi";
 import mongoose from "mongoose";
 
 const studentSchema = new mongoose.Schema({
@@ -13,8 +14,18 @@ const studentSchema = new mongoose.Schema({
         required: true
     },
 
-    payment: {
-        type: Boolean,
+    course: {
+        type: String,
+        required: true
+    },
+
+    gender: {
+        type: String,
+        required: true
+    },
+
+    age: {
+        type: Number,
         required: true
     },
 

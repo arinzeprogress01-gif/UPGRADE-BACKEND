@@ -567,3 +567,10 @@
 2026-03-20T07:57:53.355Z [INFO]:  [POST] /login - 200 - 366ms
 2026-03-20T07:57:59.097Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b retrieved successfully
 2026-03-20T07:57:59.100Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 200 - 186ms
+2026-03-20T08:03:46.281Z [INFO]: Server is starting...
+2026-03-20T08:03:46.296Z [INFO]: Server running on port 5001
+2026-03-20T08:03:49.168Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-20T08:03:50.938Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T08:03:50.945Z [INFO]:  [POST] /login - 200 - 502ms
+2026-03-20T08:04:00.669Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b retrieved successfully
+2026-03-20T08:04:00.674Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 200 - 173ms

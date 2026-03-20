@@ -79,7 +79,9 @@ export const addStudent = async (req, res) => {
         const newStudent = await createStudent({
             name: req.body.name,
             class: req.body.class,
-            payment: req.body.payment,
+            course: req.body.course,
+            gender: req.body.gender,
+            age: req.body.age,
             user: req.user.id
         });
         loggerUtils.info(`Student with ID ${newStudent.id} created successfully`);
@@ -174,7 +176,9 @@ export const putStudent = async (req, res) => {
         const replaced = await replaceStudent(req.studentId, {
         name: req.body.name,
         class: req.body.class,
-        payment: req.body.payment
+        course: req.body.course,
+        gender: req.body.gender,
+        age: req.body.age
     });
 
         if (!replaced) {
