@@ -420,3 +420,36 @@
 2026-03-20T01:19:44.066Z [INFO]:  [POST] /login - 200 - 402ms
 2026-03-20T01:19:55.634Z [INFO]: All students retrieved successfully
 2026-03-20T01:19:55.638Z [INFO]:  [GET] /students - 200 - 167ms
+2026-03-20T06:31:49.316Z [INFO]: Server is starting...
+2026-03-20T06:31:49.330Z [INFO]: Server running on port 5001
+2026-03-20T06:31:51.258Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-20T06:31:52.505Z [INFO]:  [GET] /students - 401 - 10ms
+2026-03-20T06:32:04.609Z [ERROR]: Error occurred while fetching students
+2026-03-20T06:32:04.611Z [INFO]:  [GET] /students - 500 - 11ms
+2026-03-20T06:32:09.897Z [ERROR]: Error occurred while fetching students
+2026-03-20T06:32:09.899Z [INFO]:  [GET] /students - 500 - 4ms
+2026-03-20T06:32:14.004Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T06:32:14.006Z [INFO]:  [POST] /login - 200 - 339ms
+2026-03-20T06:32:30.284Z [INFO]: Server is starting...
+2026-03-20T06:32:30.313Z [INFO]: Server running on port 5001
+2026-03-20T06:32:31.998Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-20T06:32:34.966Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T06:32:34.973Z [INFO]:  [POST] /login - 200 - 393ms
+2026-03-20T06:33:20.571Z [INFO]: Server is starting...
+2026-03-20T06:33:20.589Z [INFO]: Server running on port 5001
+2026-03-20T06:33:22.116Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-20T06:33:27.615Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T06:33:27.620Z [INFO]:  [POST] /login - 200 - 349ms
+2026-03-20T06:33:30.724Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T06:33:30.726Z [INFO]:  [POST] /login - 200 - 314ms
+2026-03-20T06:33:34.036Z [INFO]:  [GET] /students - 401 - 2ms
+2026-03-20T06:33:37.255Z [INFO]:  [GET] /students - 401 - 1ms
+2026-03-20T06:58:41.951Z [INFO]: Server is starting...
+2026-03-20T06:58:41.970Z [INFO]: Server running on port 5001
+2026-03-20T06:59:08.164Z [INFO]: Server is starting...
+2026-03-20T06:59:08.184Z [INFO]: Server running on port 5001
+2026-03-20T07:01:14.844Z [INFO]: Server is starting...
+2026-03-20T07:01:14.959Z [INFO]: Server running on port 5001
+2026-03-20T07:01:16.975Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-20T07:01:19.211Z [INFO]: USER CREATED SUCCESSFULLY 69bcf0befd7383049175a012-adam123@gmail.com
+2026-03-20T07:01:19.213Z [INFO]:  [POST] /register - 201 - 595ms

@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const studentSchema = new mongoose.Schema({
+
     name: {
         type: String,
         required: true,
@@ -15,7 +16,12 @@ const studentSchema = new mongoose.Schema({
     payment: {
         type: Boolean,
         required: true
-    }
+    },
+
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+    },
 
 }, {
     timestamps: true

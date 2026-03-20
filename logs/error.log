@@ -49,3 +49,5 @@
 2026-03-19T21:51:37.923Z [ERROR]: Error: Invalid student data - "class" is required
 2026-03-20T01:15:47.911Z [ERROR]: NO USER MATCHED medin@gmail.com-medinah123 NOT FOUND 
 2026-03-20T01:17:39.042Z [ERROR]: NO USER MATCHED medinah@gmail.com-medinah123 NOT FOUND 
+2026-03-20T06:32:04.609Z [ERROR]: Error occurred while fetching students
+2026-03-20T06:32:09.897Z [ERROR]: Error occurred while fetching students
