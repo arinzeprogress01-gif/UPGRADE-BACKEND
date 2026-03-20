@@ -39,3 +39,13 @@
 2026-03-19T03:56:46.283Z [ERROR]: Cannot read properties of undefined (reading 'ObjectId')
 2026-03-19T04:13:45.380Z [ERROR]: Invalid MongoDB 69bb5e6fc5f1497933fe8a8
 2026-03-19T04:13:55.722Z [ERROR]: Invalid MongoDB hh
+2026-03-19T21:47:40.889Z [ERROR]: Unexpected token '', ..."ment": tru
+  }" is not valid JSON
+2026-03-19T21:48:15.481Z [ERROR]: Unexpected token '', ..."ment": tru
+  }" is not valid JSON
+2026-03-19T21:48:17.933Z [ERROR]: Unexpected token '', ..."ment": tru
+  }" is not valid JSON
+2026-03-19T21:50:05.528Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-19T21:51:37.923Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-20T01:15:47.911Z [ERROR]: NO USER MATCHED medin@gmail.com-medinah123 NOT FOUND 
+2026-03-20T01:17:39.042Z [ERROR]: NO USER MATCHED medinah@gmail.com-medinah123 NOT FOUND 
