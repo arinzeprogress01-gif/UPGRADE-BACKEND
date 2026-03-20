@@ -453,3 +453,117 @@
 2026-03-20T07:01:16.975Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
 2026-03-20T07:01:19.211Z [INFO]: USER CREATED SUCCESSFULLY 69bcf0befd7383049175a012-adam123@gmail.com
 2026-03-20T07:01:19.213Z [INFO]:  [POST] /register - 201 - 595ms
+2026-03-20T07:06:14.238Z [INFO]: Server is starting...
+2026-03-20T07:06:14.253Z [INFO]: Server running on port 5001
+2026-03-20T07:06:18.933Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-20T07:06:20.769Z [INFO]: USER CREATED SUCCESSFULLY 69bcf1ec2210ee2164e9df54-eve123@gmail.com
+2026-03-20T07:06:20.771Z [INFO]:  [POST] /register - 201 - 516ms
+2026-03-20T07:08:44.941Z [INFO]: Server is starting...
+2026-03-20T07:08:44.971Z [INFO]: Server running on port 5001
+2026-03-20T07:08:46.832Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:08:48.137Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:08:48.141Z [INFO]:  [POST] /login - 200 - 347ms
+2026-03-20T07:09:00.763Z [ERROR]: Error occurred while fetching students
+2026-03-20T07:09:00.765Z [INFO]:  [GET] /students - 500 - 7ms
+2026-03-20T07:09:15.024Z [INFO]: Server is starting...
+2026-03-20T07:09:15.040Z [INFO]: Server running on port 5001
+2026-03-20T07:09:16.851Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:09:18.337Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:09:18.341Z [INFO]:  [POST] /login - 200 - 369ms
+2026-03-20T07:09:29.952Z [ERROR]: Error occurred while fetching students
+2026-03-20T07:09:29.955Z [INFO]:  [GET] /students - 500 - 8ms
+2026-03-20T07:35:21.851Z [INFO]: Server is starting...
+2026-03-20T07:35:21.874Z [INFO]: Server running on port 5001
+2026-03-20T07:35:23.931Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:35:26.529Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:35:26.532Z [INFO]:  [POST] /login - 200 - 359ms
+2026-03-20T07:35:36.467Z [ERROR]: Error occurred while fetching students
+2026-03-20T07:35:36.469Z [INFO]:  [GET] /students - 500 - 8ms
+2026-03-20T07:35:51.660Z [INFO]: Server is starting...
+2026-03-20T07:35:51.681Z [INFO]: Server running on port 5001
+2026-03-20T07:35:53.183Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:35:54.653Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:35:54.657Z [INFO]:  [POST] /login - 200 - 1587ms
+2026-03-20T07:36:06.707Z [ERROR]: Error occurred while fetching students
+2026-03-20T07:36:06.711Z [INFO]:  [GET] /students - 500 - 9ms
+2026-03-20T07:36:10.860Z [ERROR]: Error occurred while fetching students
+2026-03-20T07:36:10.863Z [INFO]:  [GET] /students - 500 - 4ms
+2026-03-20T07:37:39.896Z [INFO]: Server is starting...
+2026-03-20T07:37:39.913Z [INFO]: Server running on port 5001
+2026-03-20T07:37:41.801Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-20T07:37:43.103Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:37:43.107Z [INFO]:  [POST] /login - 200 - 1686ms
+2026-03-20T07:37:54.361Z [INFO]: All students retrieved successfully
+2026-03-20T07:37:54.366Z [INFO]:  [GET] /students - 200 - 184ms
+2026-03-20T07:38:08.911Z [INFO]: Server is starting...
+2026-03-20T07:38:08.925Z [INFO]: Server running on port 5001
+2026-03-20T07:38:10.475Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-20T07:38:12.070Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:38:12.077Z [INFO]:  [POST] /login - 200 - 1251ms
+2026-03-20T07:38:21.709Z [INFO]:  [GET] /students - 200 - 176ms
+2026-03-20T07:38:26.466Z [INFO]:  [GET] /students - 200 - 147ms
+2026-03-20T07:44:31.075Z [INFO]: Server is starting...
+2026-03-20T07:44:31.099Z [INFO]: Server running on port 5001
+2026-03-20T07:44:32.812Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-20T07:44:35.463Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:44:35.471Z [INFO]:  [POST] /login - 200 - 376ms
+2026-03-20T07:44:45.384Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-20T07:44:45.387Z [INFO]:  [GET] /students - 404 - 8ms
+2026-03-20T07:48:39.420Z [INFO]: Server is starting...
+2026-03-20T07:48:39.432Z [INFO]: Server running on port 5001
+2026-03-20T07:48:41.121Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-20T07:48:42.942Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:48:42.950Z [INFO]:  [POST] /login - 200 - 366ms
+2026-03-20T07:48:54.406Z [INFO]: All students retrieved successfully
+2026-03-20T07:48:54.411Z [INFO]:  [GET] /students - 200 - 153ms
+2026-03-20T07:49:17.806Z [INFO]: Server is starting...
+2026-03-20T07:49:17.823Z [INFO]: Server running on port 5001
+2026-03-20T07:49:19.814Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-20T07:49:25.247Z [INFO]:  [POST] /api/students/69bb5e6fc5f1497933fe8a8b - 404 - 11ms
+2026-03-20T07:49:27.711Z [INFO]:  [POST] /api/students/69bb5e6fc5f1497933fe8a8b - 404 - 3ms
+2026-03-20T07:49:31.519Z [INFO]:  [POST] /api/students/69bb5e6fc5f1497933fe8a8b - 404 - 1ms
+2026-03-20T07:49:32.717Z [INFO]:  [POST] /api/students/69bb5e6fc5f1497933fe8a8b - 404 - 1ms
+2026-03-20T07:49:48.941Z [INFO]: Server is starting...
+2026-03-20T07:49:48.954Z [INFO]: Server running on port 5001
+2026-03-20T07:49:51.087Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:49:52.746Z [ERROR]: Error occurred while fetching student
+2026-03-20T07:49:52.756Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 500 - 178ms
+2026-03-20T07:50:21.056Z [INFO]: Server is starting...
+2026-03-20T07:50:21.067Z [INFO]: Server running on port 5001
+2026-03-20T07:50:22.565Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:50:29.711Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:50:29.714Z [INFO]:  [POST] /login - 200 - 368ms
+2026-03-20T07:53:00.391Z [INFO]: Server is starting...
+2026-03-20T07:53:00.408Z [INFO]: Server running on port 5001
+2026-03-20T07:53:02.167Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-20T07:53:04.959Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:53:04.967Z [INFO]:  [POST] /login - 200 - 352ms
+2026-03-20T07:53:10.098Z [ERROR]: Error occurred while fetching student
+2026-03-20T07:53:10.100Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 500 - 168ms
+2026-03-20T07:53:15.457Z [ERROR]: Error occurred while fetching student
+2026-03-20T07:53:15.460Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 500 - 150ms
+2026-03-20T07:56:09.395Z [INFO]: Server is starting...
+2026-03-20T07:56:09.413Z [INFO]: Server running on port 5001
+2026-03-20T07:56:12.261Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:56:13.777Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:56:13.781Z [INFO]:  [POST] /login - 200 - 2153ms
+2026-03-20T07:56:16.207Z [ERROR]: NOT AUTHORIZED TO ACCESS STUDENT DATA
+2026-03-20T07:56:16.210Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 403 - 160ms
+2026-03-20T07:56:18.042Z [ERROR]: NOT AUTHORIZED TO ACCESS STUDENT DATA
+2026-03-20T07:56:18.044Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 403 - 156ms
+2026-03-20T07:56:56.411Z [INFO]: Server is starting...
+2026-03-20T07:56:56.430Z [INFO]: Server running on port 5001
+2026-03-20T07:56:58.171Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-20T07:56:59.507Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:56:59.512Z [INFO]:  [POST] /login - 200 - 677ms
+2026-03-20T07:57:10.196Z [ERROR]: Error occurred while fetching student
+2026-03-20T07:57:10.199Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 500 - 158ms
+2026-03-20T07:57:12.302Z [ERROR]: Error occurred while fetching student
+2026-03-20T07:57:12.304Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 500 - 147ms
+2026-03-20T07:57:50.301Z [INFO]: Server is starting...
+2026-03-20T07:57:50.315Z [INFO]: Server running on port 5001
+2026-03-20T07:57:51.956Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-20T07:57:53.352Z [INFO]: LOGIN SUCCESSFUL
+2026-03-20T07:57:53.355Z [INFO]:  [POST] /login - 200 - 366ms
+2026-03-20T07:57:59.097Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b retrieved successfully
+2026-03-20T07:57:59.100Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 200 - 186ms

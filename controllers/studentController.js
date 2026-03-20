@@ -1,4 +1,5 @@
 import loggerUtils from '../utils/loggerUtils.js';
+import Student from "../models/Students.js"
 import {
     getAllStudents,
     getStudentById,
@@ -10,7 +11,8 @@ import {
 
 
 
-export const getStudents = async (_req, res) => {
+
+export const getStudents = async (req, res) => {
     try{
         
         let students;
@@ -19,7 +21,9 @@ export const getStudents = async (_req, res) => {
 
         loggerUtils.info("All students retrieved successfully");
         }
-        else { students = await Student.find({user: re.user.id});
+        else { 
+            loggerUtils.error("YOU DO NOT ACCESS ADMIN ACCESS")
+            return res.status(404).json({ error: "UNAUTHORIZED ACCESS"});
         }
 
         return res.status(200).json(students);
@@ -36,7 +40,7 @@ export const getStudent = async (req, res) => {
    
     try{
         
-        const student = await getStudentById(req.studentId);
+        const student = await Student.findById(req.studentId);
 
         if (!student) {
             loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
@@ -46,11 +50,11 @@ export const getStudent = async (req, res) => {
         }
 
         if (
-            req.user.role !== "admin" && students.user.toString() !== req.user.id
+            req.user.role !== "admin" && student.user.toString() !== req.user.id
         ) {
-            loggerUtils.error("NOT AUTHORISED TO ACCESS STUDENT DATA")
+            loggerUtils.error("NOT AUTHORIZED TO ACCESS STUDENT DATA")
             return res.status(403).json({
-                error: "Not Authorised to acess this student"
+                error: "Not Authorized to access this student"
             });
         }
 
@@ -106,7 +110,7 @@ export const removeStudent = async (req, res) => {
 
         if (
             req.user.role !== "admin" &&
-            student.user.toString() !== req.user.id
+            deleted.user.toString() !== req.user.id
             ) {
                 loggerUtils.error("NOT AUTHORIZED TO DELETE")
                 return res.status(403).json({
