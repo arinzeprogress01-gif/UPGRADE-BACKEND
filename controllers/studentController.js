@@ -89,8 +89,15 @@ export const addStudent = async (req, res) => {
         return res.status(201).json(newStudent);
 
     } catch (error) {
-        loggerUtils.error("Error occurred while creating student");
-        return res.status(500).json({ error: "Internal Server Error. Failed to create student" });
+        
+        if (error.code === 11000) {
+
+
+            loggerUtils.error("Student already has a profile ");
+            return res.status(500).json({ error: "YOU ALREADY HAVE A STUDENT PROFILE" });
+        }
+        loggerUtils.error("ERROR IN LOGGED STUDENT DATA")
+        return res.status(404).json({error: "FAILED TO CREATE STUDENT"})
     }
 };
 
@@ -149,7 +156,7 @@ export const patchStudent = async (req, res) => {
 
         if (
             req.user.role !== "admin" &&
-            student.user.toString() !== req.user.id
+            updated.user.toString() !== req.user.id
             ) {
                 loggerUtils.error("NOT AUTHORIZED TO UPDATE")
                 return res.status(403).json({
@@ -190,7 +197,7 @@ export const putStudent = async (req, res) => {
 
         if (
             req.user.role !== "admin" &&
-            student.user.toString() !== req.user.id
+            replaced.user.toString() !== req.user.id
         ) {
             loggerUtils.error("NOT AUTHORIZED TO UPDATE")
             return res.status(403).json({

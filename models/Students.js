@@ -1,4 +1,3 @@
-import { number } from "joi";
 import mongoose from "mongoose";
 
 const studentSchema = new mongoose.Schema({
@@ -31,7 +30,9 @@ const studentSchema = new mongoose.Schema({
 
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "User"
+        ref: "User",
+        required : true,
+        unique : true
     },
 
 }, {

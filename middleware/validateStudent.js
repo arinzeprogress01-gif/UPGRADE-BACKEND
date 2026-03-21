@@ -5,7 +5,7 @@ import loggerUtils from '../utils/loggerUtils.js';
 import { createStudentSchema } from "../validators/studentValidator.js";
 
 export const validateStudent = (req, res, next) => {
-    const { name, class: studentClass, payment } = req.body;
+    const { name, class: studentClass, course, gender, age } = req.body;
 
     if (!name || !studentClass || !course || !age || !gender) {
         loggerUtils.error(`Error: Invalid student data - ${JSON.stringify(req.body)}`);

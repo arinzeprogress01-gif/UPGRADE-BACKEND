@@ -574,3 +574,362 @@
 2026-03-20T08:03:50.945Z [INFO]:  [POST] /login - 200 - 502ms
 2026-03-20T08:04:00.669Z [INFO]: Student with ID 69bb5e6fc5f1497933fe8a8b retrieved successfully
 2026-03-20T08:04:00.674Z [INFO]:  [GET] /students/69bb5e6fc5f1497933fe8a8b - 200 - 173ms
+2026-03-20T22:34:04.539Z [INFO]: Server is starting...
+2026-03-20T22:34:04.555Z [INFO]: Server running on port 5001
+2026-03-21T03:49:56.275Z [INFO]: Server is starting...
+2026-03-21T03:49:56.299Z [INFO]: Server running on port 5001
+2026-03-21T03:49:57.941Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T03:49:59.311Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T03:49:59.316Z [INFO]:  [POST] /login - 200 - 393ms
+2026-03-21T03:50:10.120Z [ERROR]: Error: Invalid student data - "age" must be a number
+2026-03-21T03:50:10.123Z [INFO]:  [POST] /students - 400 - 16ms
+2026-03-21T03:53:21.080Z [INFO]: Server is starting...
+2026-03-21T03:53:21.093Z [INFO]: Server running on port 5001
+2026-03-21T03:53:22.581Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T03:53:24.083Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T03:53:24.086Z [INFO]:  [POST] /login - 200 - 368ms
+2026-03-21T03:53:34.883Z [ERROR]: Error: Invalid student data - "age" must be less than or equal to 3
+2026-03-21T03:53:34.886Z [INFO]:  [POST] /students - 400 - 16ms
+2026-03-21T03:59:30.310Z [INFO]: Server is starting...
+2026-03-21T03:59:30.337Z [INFO]: Server running on port 5001
+2026-03-21T03:59:32.204Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T03:59:35.169Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T03:59:35.172Z [INFO]:  [POST] /login - 200 - 334ms
+2026-03-21T03:59:42.768Z [ERROR]: Error: Invalid student data - "age" must be less than or equal to 4
+2026-03-21T03:59:42.771Z [INFO]:  [POST] /students - 400 - 13ms
+2026-03-21T04:05:41.844Z [INFO]: Server is starting...
+2026-03-21T04:05:41.855Z [INFO]: Server running on port 5001
+2026-03-21T04:05:43.365Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T04:05:47.234Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T04:05:47.239Z [INFO]:  [POST] /login - 200 - 360ms
+2026-03-21T04:05:51.550Z [ERROR]: course is not defined
+2026-03-21T04:05:51.552Z [INFO]:  [POST] /api/students - 500 - 14ms
+2026-03-21T04:06:51.386Z [INFO]: Server is starting...
+2026-03-21T04:06:51.411Z [INFO]: Server running on port 5001
+2026-03-21T04:06:53.131Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T04:06:55.479Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T04:06:55.485Z [INFO]:  [POST] /login - 200 - 374ms
+2026-03-21T04:06:57.930Z [ERROR]: course is not defined
+2026-03-21T04:06:57.946Z [INFO]:  [POST] /api/students - 500 - 50ms
+2026-03-21T04:08:36.552Z [INFO]: Server is starting...
+2026-03-21T04:08:36.563Z [INFO]: Server running on port 5001
+2026-03-21T04:08:38.220Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T04:08:40.081Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T04:08:40.089Z [INFO]:  [POST] /login - 200 - 386ms
+2026-03-21T04:08:42.438Z [ERROR]: course is not defined
+2026-03-21T04:08:42.440Z [INFO]:  [POST] /api/students - 500 - 16ms
+2026-03-21T04:53:41.671Z [INFO]: Server is starting...
+2026-03-21T04:53:41.689Z [INFO]: Server running on port 5001
+2026-03-21T04:53:43.302Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T04:53:44.419Z [INFO]: Student with ID 69be24580d30577af9603cda created successfully
+2026-03-21T04:53:44.429Z [INFO]:  [POST] /students - 201 - 193ms
+2026-03-21T05:12:06.828Z [INFO]: Server is starting...
+2026-03-21T05:12:06.845Z [INFO]: Server running on port 5001
+2026-03-21T05:12:08.969Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T05:12:13.592Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:12:13.594Z [INFO]:  [POST] /login - 200 - 379ms
+2026-03-21T05:12:18.135Z [INFO]: Student with ID 69be24580d30577af9603cda retrieved successfully
+2026-03-21T05:12:18.140Z [INFO]:  [GET] /students/69be24580d30577af9603cda - 200 - 193ms
+2026-03-21T05:15:10.531Z [INFO]: Server is starting...
+2026-03-21T05:15:10.541Z [INFO]: Server running on port 5001
+2026-03-21T05:15:12.334Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T05:15:14.128Z [INFO]: USER CREATED SUCCESSFULLY 69be296124d38a17e3f4aed3-arinzeprogress01@gmail.com
+2026-03-21T05:15:14.130Z [INFO]:  [POST] /register - 201 - 574ms
+2026-03-21T05:15:20.123Z [INFO]: Student with ID 69be24580d30577af9603cda retrieved successfully
+2026-03-21T05:15:20.128Z [INFO]:  [GET] /students/69be24580d30577af9603cda - 200 - 179ms
+2026-03-21T05:18:06.964Z [INFO]: Server is starting...
+2026-03-21T05:18:06.976Z [INFO]: Server running on port 5001
+2026-03-21T05:18:08.624Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T05:18:11.497Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:18:11.500Z [INFO]:  [POST] /login - 200 - 357ms
+2026-03-21T05:18:15.732Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:18:15.734Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 164ms
+2026-03-21T05:18:18.696Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:18:18.698Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 143ms
+2026-03-21T05:18:22.310Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:18:22.312Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 151ms
+2026-03-21T05:27:47.402Z [INFO]: Server is starting...
+2026-03-21T05:27:47.417Z [INFO]: Server running on port 5001
+2026-03-21T05:27:49.014Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T05:27:56.291Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:27:56.299Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 172ms
+2026-03-21T05:28:20.339Z [INFO]: Server is starting...
+2026-03-21T05:28:20.356Z [INFO]: Server running on port 5001
+2026-03-21T05:28:21.999Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T05:28:23.442Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:28:23.452Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 186ms
+2026-03-21T05:28:26.796Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:28:26.797Z [INFO]:  [POST] /login - 200 - 355ms
+2026-03-21T05:28:29.088Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:28:29.090Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 159ms
+2026-03-21T05:28:36.615Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:28:36.617Z [INFO]:  [GET] /students/69be296124d38a17e3f4aed3 - 404 - 144ms
+2026-03-21T05:28:38.852Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:28:38.854Z [INFO]:  [GET] /students/69be296124d38a17e3f4aed3 - 404 - 149ms
+2026-03-21T05:28:53.467Z [INFO]: Server is starting...
+2026-03-21T05:28:53.484Z [INFO]: Server running on port 5001
+2026-03-21T05:28:55.056Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T05:28:57.492Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:28:57.496Z [INFO]:  [POST] /login - 200 - 377ms
+2026-03-21T05:29:00.360Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:00.363Z [INFO]:  [GET] /students/69be296124d38a17e3f4aed3 - 404 - 171ms
+2026-03-21T05:29:01.804Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:01.806Z [INFO]:  [GET] /students/69be296124d38a17e3f4aed3 - 404 - 220ms
+2026-03-21T05:29:02.816Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:02.817Z [INFO]:  [GET] /students/69be296124d38a17e3f4aed3 - 404 - 160ms
+2026-03-21T05:29:31.369Z [INFO]: Server is starting...
+2026-03-21T05:29:31.386Z [INFO]: Server running on port 5001
+2026-03-21T05:29:33.398Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T05:29:35.119Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:29:35.126Z [INFO]:  [POST] /login - 200 - 2960ms
+2026-03-21T05:29:46.352Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:46.355Z [INFO]:  [GET] /students/69be296124d38a17e3f4aed3 - 404 - 186ms
+2026-03-21T05:35:32.995Z [INFO]: Server is starting...
+2026-03-21T05:35:33.007Z [INFO]: Server running on port 5001
+2026-03-21T05:35:34.657Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T05:35:36.225Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:35:36.232Z [INFO]:  [POST] /login - 200 - 355ms
+2026-03-21T05:35:43.892Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:35:43.894Z [INFO]:  [GET] /students/69be296124d38a17e3f4aed3 - 404 - 149ms
+2026-03-21T05:43:53.372Z [INFO]: Server is starting...
+2026-03-21T05:43:53.388Z [INFO]: Server running on port 5001
+2026-03-21T05:43:55.292Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T05:43:56.598Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:43:56.604Z [INFO]:  [POST] /login - 200 - 2589ms
+2026-03-21T05:43:57.803Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:43:57.807Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 223ms
+2026-03-21T05:44:02.298Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:44:02.300Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 199ms
+2026-03-21T05:44:07.757Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:44:07.758Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 159ms
+2026-03-21T05:45:26.811Z [INFO]: Server is starting...
+2026-03-21T05:45:26.825Z [INFO]: Server running on port 5001
+2026-03-21T05:45:29.254Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T05:45:30.758Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:45:30.761Z [INFO]:  [POST] /login - 200 - 1934ms
+2026-03-21T05:45:32.099Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 401 - 2ms
+2026-03-21T05:46:03.917Z [INFO]: Server is starting...
+2026-03-21T05:46:03.936Z [INFO]: Server running on port 5001
+2026-03-21T05:46:05.891Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T05:46:08.555Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:46:08.558Z [INFO]:  [POST] /login - 200 - 413ms
+2026-03-21T05:46:18.348Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:46:18.351Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 157ms
+2026-03-21T05:46:20.268Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:46:20.270Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 153ms
+2026-03-21T05:46:23.967Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:46:23.969Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 152ms
+2026-03-21T05:59:43.087Z [INFO]: Server is starting...
+2026-03-21T05:59:43.119Z [INFO]: Server running on port 5001
+2026-03-21T05:59:45.090Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T05:59:46.229Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:59:46.247Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 2004ms
+2026-03-21T05:59:50.032Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T05:59:50.033Z [INFO]:  [POST] /login - 200 - 351ms
+2026-03-21T05:59:52.086Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:59:52.087Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 150ms
+2026-03-21T06:09:39.670Z [INFO]: Server is starting...
+2026-03-21T06:09:39.684Z [INFO]: Server running on port 5001
+2026-03-21T06:09:42.610Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T06:09:43.976Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T06:09:43.982Z [INFO]:  [POST] /login - 200 - 374ms
+2026-03-21T06:09:54.993Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T06:09:54.995Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 404 - 155ms
+2026-03-21T06:10:26.713Z [INFO]: Server is starting...
+2026-03-21T06:10:26.728Z [INFO]: Server running on port 5001
+2026-03-21T06:10:28.279Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T06:10:29.910Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T06:10:29.914Z [INFO]:  [POST] /login - 200 - 1385ms
+2026-03-21T06:10:35.948Z [INFO]:  [GET] /students/69bcf1ec2210ee2164e9df54 - 401 - 2ms
+2026-03-21T06:12:20.260Z [INFO]: Server is starting...
+2026-03-21T06:12:20.285Z [INFO]: Server running on port 5001
+2026-03-21T06:12:22.588Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T06:12:24.096Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T06:12:24.146Z [INFO]:  [POST] /login - 200 - 3735ms
+2026-03-21T06:12:26.831Z [INFO]:  [GET] /students/69be24580d30577af9603cda - 401 - 3ms
+2026-03-21T06:12:27.898Z [INFO]:  [GET] /students/69be24580d30577af9603cda - 401 - 1ms
+2026-03-21T06:12:49.534Z [INFO]: Server is starting...
+2026-03-21T06:12:49.545Z [INFO]: Server running on port 5001
+2026-03-21T06:12:51.334Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T06:12:53.828Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T06:12:53.835Z [INFO]:  [POST] /login - 200 - 2711ms
+2026-03-21T06:13:05.819Z [INFO]: Student with ID 69be24580d30577af9603cda retrieved successfully
+2026-03-21T06:13:05.822Z [INFO]:  [GET] /students/69be24580d30577af9603cda - 200 - 159ms
+2026-03-21T06:17:54.742Z [INFO]: Server is starting...
+2026-03-21T06:17:54.755Z [INFO]: Server running on port 5001
+2026-03-21T06:17:56.451Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T06:17:57.678Z [ERROR]: NO USER MATCHED arinzeprogress01@gmail.com@gmail.com-godmylove01 NOT FOUND 
+2026-03-21T06:17:57.686Z [INFO]:  [POST] /login - 400 - 156ms
+2026-03-21T06:18:20.328Z [INFO]: Server is starting...
+2026-03-21T06:18:20.344Z [INFO]: Server running on port 5001
+2026-03-21T06:18:22.119Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T06:18:23.443Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T06:18:23.451Z [INFO]:  [POST] /login - 200 - 378ms
+2026-03-21T06:18:26.538Z [INFO]: Student with ID 69be24580d30577af9603cda retrieved successfully
+2026-03-21T06:18:26.541Z [INFO]:  [GET] /students/69be24580d30577af9603cda - 200 - 140ms
+2026-03-21T06:23:27.347Z [INFO]: Server is starting...
+2026-03-21T06:23:27.364Z [INFO]: Server running on port 5001
+2026-03-21T06:23:29.560Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T06:23:31.522Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T06:23:31.525Z [INFO]:  [POST] /login - 200 - 3343ms
+2026-03-21T06:23:42.307Z [ERROR]: NOT AUTHORIZED TO ACCESS STUDENT DATA
+2026-03-21T06:23:42.309Z [INFO]:  [GET] /students/69be24580d30577af9603cda - 403 - 146ms
+2026-03-21T07:27:32.328Z [INFO]: Server is starting...
+2026-03-21T07:27:32.343Z [INFO]: Server running on port 5001
+2026-03-21T07:27:34.276Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T07:27:35.659Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T07:27:35.661Z [INFO]:  [POST] /login - 200 - 1790ms
+2026-03-21T07:27:39.578Z [ERROR]: NO USER MATCHED undefined-undefined NOT FOUND 
+2026-03-21T07:27:39.580Z [INFO]:  [POST] /login - 400 - 182ms
+2026-03-21T07:27:55.009Z [INFO]:  [POST] /students - 401 - 2ms
+2026-03-21T07:28:06.040Z [INFO]: Server is starting...
+2026-03-21T07:28:06.076Z [INFO]: Server running on port 5001
+2026-03-21T07:28:07.696Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T07:28:09.168Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T07:28:09.181Z [INFO]:  [POST] /login - 200 - 2288ms
+2026-03-21T07:28:23.713Z [ERROR]: Error: Invalid student data - "gender" is required
+2026-03-21T07:28:23.717Z [INFO]:  [POST] /students - 400 - 14ms
+2026-03-21T07:28:49.616Z [INFO]: Server is starting...
+2026-03-21T07:28:49.640Z [INFO]: Server running on port 5001
+2026-03-21T07:28:51.532Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T07:28:57.205Z [INFO]: Student with ID 69be48b9b832c764e61b89c7 created successfully
+2026-03-21T07:28:57.217Z [INFO]:  [POST] /students - 201 - 210ms
+2026-03-21T07:29:58.298Z [INFO]: Server is starting...
+2026-03-21T07:29:58.313Z [INFO]: Server running on port 5001
+2026-03-21T07:30:00.225Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T07:30:02.325Z [ERROR]: Error occurred while creating student
+2026-03-21T07:30:02.331Z [INFO]:  [POST] /students - 500 - 224ms
+2026-03-21T07:30:09.357Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T07:30:09.363Z [INFO]:  [POST] /login - 200 - 381ms
+2026-03-21T07:30:11.795Z [ERROR]: Error occurred while creating student
+2026-03-21T07:30:11.796Z [INFO]:  [POST] /students - 500 - 279ms
+2026-03-21T07:42:40.059Z [INFO]: Server is starting...
+2026-03-21T07:42:40.080Z [INFO]: Server running on port 5001
+2026-03-21T07:42:41.964Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T07:43:27.609Z [INFO]: Server is starting...
+2026-03-21T07:43:27.630Z [INFO]: Server running on port 5001
+2026-03-21T07:43:30.682Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T07:43:32.112Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T07:43:32.114Z [INFO]:  [POST] /login - 200 - 2068ms
+2026-03-21T08:09:31.105Z [INFO]: Server is starting...
+2026-03-21T08:09:31.121Z [INFO]: Server running on port 5001
+2026-03-21T08:10:08.096Z [INFO]: Server is starting...
+2026-03-21T08:10:08.106Z [INFO]: Server running on port 5001
+2026-03-21T08:10:28.151Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T08:10:39.571Z [INFO]: Server is starting...
+2026-03-21T08:10:39.584Z [INFO]: Server running on port 5001
+2026-03-21T08:10:48.282Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T08:11:12.847Z [INFO]: Server is starting...
+2026-03-21T08:11:12.857Z [INFO]: Server running on port 5001
+2026-03-21T08:11:16.026Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T08:11:20.070Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T08:11:20.081Z [INFO]:  [POST] /login - 200 - 6559ms
+2026-03-21T08:12:25.324Z [INFO]: Server is starting...
+2026-03-21T08:12:25.354Z [INFO]: Server running on port 5001
+2026-03-21T08:12:27.308Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T08:12:28.468Z [ERROR]: Student already has a profile 
+2026-03-21T08:12:28.479Z [INFO]:  [POST] /students - 500 - 1540ms
+2026-03-21T08:20:52.723Z [INFO]: Server is starting...
+2026-03-21T08:20:52.737Z [INFO]: Server running on port 5001
+2026-03-21T08:20:55.844Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T08:20:59.024Z [ERROR]: ERROR IN LOGGED STUDENT DATA
+2026-03-21T08:20:59.037Z [INFO]:  [POST] /students - 404 - 304ms
+2026-03-21T08:21:58.746Z [INFO]: Server is starting...
+2026-03-21T08:21:58.761Z [INFO]: Server running on port 5001
+2026-03-21T08:22:00.904Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T08:22:02.359Z [ERROR]: Student already has a profile 
+2026-03-21T08:22:02.365Z [INFO]:  [POST] /students - 500 - 202ms
+2026-03-21T08:49:58.872Z [INFO]: Server is starting...
+2026-03-21T08:49:58.891Z [INFO]: Server running on port 5001
+2026-03-21T08:50:00.199Z [INFO]:  [PUT] /api/students - 404 - 6ms
+2026-03-21T08:50:00.731Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T08:50:08.562Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:50:08.567Z [INFO]:  [PUT] /students/69be24580d30577af9603cda - 500 - 210ms
+2026-03-21T08:50:10.496Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:50:10.498Z [INFO]:  [PUT] /students/69be24580d30577af9603cda - 500 - 206ms
+2026-03-21T08:51:07.191Z [INFO]: Server is starting...
+2026-03-21T08:51:07.219Z [INFO]: Server running on port 5001
+2026-03-21T08:51:10.002Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T08:51:12.067Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:51:12.074Z [INFO]:  [PUT] /students/69be48b9b832c764e61b89c7 - 500 - 266ms
+2026-03-21T08:51:13.516Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:51:13.517Z [INFO]:  [PUT] /students/69be48b9b832c764e61b89c7 - 500 - 228ms
+2026-03-21T08:52:47.293Z [INFO]: Server is starting...
+2026-03-21T08:52:47.308Z [INFO]: Server running on port 5001
+2026-03-21T08:52:50.042Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T08:52:51.450Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T08:52:51.453Z [INFO]:  [POST] /login - 200 - 1436ms
+2026-03-21T08:53:06.757Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T08:53:06.759Z [INFO]:  [PUT] /students/69be296124d38a17e3f4aed3 - 404 - 176ms
+2026-03-21T08:53:22.313Z [INFO]: Server is starting...
+2026-03-21T08:53:22.325Z [INFO]: Server running on port 5001
+2026-03-21T08:53:23.988Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T08:53:25.189Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:53:25.197Z [INFO]:  [PUT] /students/69be24580d30577af9603cda - 500 - 2581ms
+2026-03-21T08:53:56.766Z [INFO]: Server is starting...
+2026-03-21T08:53:56.778Z [INFO]: Server running on port 5001
+2026-03-21T08:53:59.194Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T08:54:05.692Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:54:05.701Z [INFO]:  [PUT] /students/69be48b9b832c764e61b89c7 - 500 - 264ms
+2026-03-21T08:54:27.956Z [INFO]: Server is starting...
+2026-03-21T08:54:27.972Z [INFO]: Server running on port 5001
+2026-03-21T08:54:29.837Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T08:54:34.036Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-21T08:54:34.045Z [INFO]:  [PUT] /students/69be48b9b832c764e61b89c7 - 400 - 30ms
+2026-03-21T08:55:30.950Z [INFO]: Server is starting...
+2026-03-21T08:55:30.964Z [INFO]: Server running on port 5001
+2026-03-21T08:55:32.874Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T08:55:40.387Z [INFO]: Student with ID 69be48b9b832c764e61b89c7 retrieved successfully
+2026-03-21T08:55:40.398Z [INFO]:  [GET] /students/69be48b9b832c764e61b89c7 - 200 - 203ms
+2026-03-21T08:56:00.548Z [INFO]: Server is starting...
+2026-03-21T08:56:00.567Z [INFO]: Server running on port 5001
+2026-03-21T08:56:02.393Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T08:56:03.931Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:56:03.938Z [INFO]:  [PUT] /students/69be48b9b832c764e61b89c7 - 500 - 227ms
+2026-03-21T08:56:53.627Z [INFO]: Server is starting...
+2026-03-21T08:56:53.643Z [INFO]: Server running on port 5001
+2026-03-21T08:56:56.042Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T08:56:57.424Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:56:57.431Z [INFO]:  [PUT] /students/69be48b9b832c764e61b89c7 - 500 - 228ms
+2026-03-21T09:00:00.926Z [INFO]: Server is starting...
+2026-03-21T09:00:00.938Z [INFO]: Server running on port 5001
+2026-03-21T09:00:02.783Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T09:00:05.284Z [INFO]: Student with ID 69be48b9b832c764e61b89c7 replaced successfully
+2026-03-21T09:00:05.292Z [INFO]:  [PUT] /students/69be48b9b832c764e61b89c7 - 200 - 224ms
+2026-03-21T09:00:47.967Z [INFO]: Server is starting...
+2026-03-21T09:00:47.987Z [INFO]: Server running on port 5001
+2026-03-21T09:00:50.863Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T09:00:52.714Z [INFO]: Student with ID 69be48b9b832c764e61b89c7 updated successfully
+2026-03-21T09:00:52.721Z [INFO]:  [PATCH] /students/69be48b9b832c764e61b89c7 - 200 - 728ms
+2026-03-21T09:01:13.240Z [INFO]: Server is starting...
+2026-03-21T09:01:13.251Z [INFO]: Server running on port 5001
+2026-03-21T09:01:16.510Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T09:01:24.591Z [INFO]: Student with ID 69be48b9b832c764e61b89c7 updated successfully
+2026-03-21T09:01:24.598Z [INFO]:  [PATCH] /students/69be48b9b832c764e61b89c7 - 200 - 196ms
+2026-03-21T09:01:33.011Z [INFO]: Student with ID 69be48b9b832c764e61b89c7 updated successfully
+2026-03-21T09:01:33.013Z [INFO]:  [PATCH] /students/69be48b9b832c764e61b89c7 - 200 - 183ms
+2026-03-21T09:04:49.122Z [INFO]: Server is starting...
+2026-03-21T09:04:49.137Z [INFO]: Server running on port 5001
+2026-03-21T09:04:51.158Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T09:04:59.751Z [INFO]:  [GET] /students - 401 - 6ms
+2026-03-21T09:05:52.310Z [INFO]: Server is starting...
+2026-03-21T09:05:52.331Z [INFO]: Server running on port 5001
+2026-03-21T09:05:54.263Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T09:05:55.875Z [INFO]:  [GET] /students - 401 - 13ms
+2026-03-21T09:06:04.636Z [INFO]:  [GET] /students - 401 - 1ms
+2026-03-21T09:06:29.394Z [INFO]: Server is starting...
+2026-03-21T09:06:29.410Z [INFO]: Server running on port 5001
+2026-03-21T09:06:32.468Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T09:06:34.793Z [INFO]:  [GET] /students/69be48b9b832c764e61b89c7 - 401 - 12ms
+2026-03-21T09:06:40.528Z [INFO]:  [GET] /students/69be48b9b832c764e61b89c7 - 401 - 3ms
+2026-03-21T09:07:09.689Z [INFO]: Server is starting...
+2026-03-21T09:07:09.705Z [INFO]: Server running on port 5001
+2026-03-21T09:07:11.574Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T09:08:23.550Z [INFO]: Server is starting...
+2026-03-21T09:08:23.569Z [INFO]: Server running on port 5001
+2026-03-21T09:08:25.408Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T09:08:27.954Z [INFO]:  [GET] /students/69be48b9b832c764e61b89c7 - 401 - 11ms
+2026-03-21T09:11:01.358Z [INFO]: Server is starting...
+2026-03-21T09:11:01.372Z [INFO]: Server running on port 5001
+2026-03-21T09:11:04.185Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T09:11:05.844Z [INFO]:  [POST] /api/students/auth/login - 404 - 6ms

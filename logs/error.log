@@ -64,3 +64,50 @@
 2026-03-20T07:56:18.042Z [ERROR]: NOT AUTHORIZED TO ACCESS STUDENT DATA
 2026-03-20T07:57:10.196Z [ERROR]: Error occurred while fetching student
 2026-03-20T07:57:12.302Z [ERROR]: Error occurred while fetching student
+2026-03-21T03:50:10.120Z [ERROR]: Error: Invalid student data - "age" must be a number
+2026-03-21T03:53:34.883Z [ERROR]: Error: Invalid student data - "age" must be less than or equal to 3
+2026-03-21T03:59:42.768Z [ERROR]: Error: Invalid student data - "age" must be less than or equal to 4
+2026-03-21T04:05:51.550Z [ERROR]: course is not defined
+2026-03-21T04:06:57.930Z [ERROR]: course is not defined
+2026-03-21T04:08:42.438Z [ERROR]: course is not defined
+2026-03-21T05:18:15.732Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:18:18.696Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:18:22.310Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:27:56.291Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:28:23.442Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:28:29.088Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:28:36.615Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:28:38.852Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:00.360Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:01.804Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:02.816Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:29:46.352Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:35:43.892Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T05:43:57.803Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:44:02.298Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:44:07.757Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:46:18.348Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:46:20.268Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:46:23.967Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:59:46.229Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T05:59:52.086Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T06:09:54.993Z [ERROR]: Error: Invalid student id - 69bcf1ec2210ee2164e9df54
+2026-03-21T06:17:57.678Z [ERROR]: NO USER MATCHED arinzeprogress01@gmail.com@gmail.com-godmylove01 NOT FOUND 
+2026-03-21T06:23:42.307Z [ERROR]: NOT AUTHORIZED TO ACCESS STUDENT DATA
+2026-03-21T07:27:39.578Z [ERROR]: NO USER MATCHED undefined-undefined NOT FOUND 
+2026-03-21T07:28:23.713Z [ERROR]: Error: Invalid student data - "gender" is required
+2026-03-21T07:30:02.325Z [ERROR]: Error occurred while creating student
+2026-03-21T07:30:11.795Z [ERROR]: Error occurred while creating student
+2026-03-21T08:12:28.468Z [ERROR]: Student already has a profile 
+2026-03-21T08:20:59.024Z [ERROR]: ERROR IN LOGGED STUDENT DATA
+2026-03-21T08:22:02.359Z [ERROR]: Student already has a profile 
+2026-03-21T08:50:08.562Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:50:10.496Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:51:12.067Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:51:13.516Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:53:06.757Z [ERROR]: Error: Invalid student id - 69be296124d38a17e3f4aed3
+2026-03-21T08:53:25.189Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:54:05.692Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:54:34.036Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-21T08:56:03.931Z [ERROR]: Error occurred while replacing student
+2026-03-21T08:56:57.424Z [ERROR]: Error occurred while replacing student
