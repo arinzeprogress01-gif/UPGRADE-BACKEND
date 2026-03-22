@@ -23,7 +23,7 @@ export const getStudents = async (req, res) => {
         }
         else { 
             loggerUtils.error("YOU DO NOT ACCESS ADMIN ACCESS")
-            return res.status(404).json({ error: "UNAUTHORIZED ACCESS"});
+            return res.status(403).json({ error: "UNAUTHORIZED ACCESS"});
         }
 
         return res.status(200).json(students);

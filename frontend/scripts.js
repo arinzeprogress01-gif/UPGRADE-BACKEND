@@ -1,80 +1,122 @@
 console.log("JS LOADED");
-const BASE = "http://localhost:5001/api";
+const BASE = "https://upgrade-backend-6sgc.onrender.com/api";
 
 function getToken() {
     return localStorage.getItem("token");
 }
 
+function showOutput(message, type = "info") {
+    const output = document.getElementById("output");
+
+    const color =
+        type === "error" ? "red" :
+            type === "success" ? "lightgrey" :
+                "white";
+
+    output.innerHTML = `
+        <p style="color:${color}; font-weight:bold;">
+            ${message}
+        </p>
+    `;
+}
+
 
 async function register() {
-    const name = document.getElementById("regName").value;
-    const email = document.getElementById("regEmail").value;
-    const password = document.getElementById("regPassword").value;
+    try {
+        const name = document.getElementById("regName").value.trim();
+        const email = document.getElementById("regEmail").value.trim();
+        const password = document.getElementById("regPassword").value.trim();
 
-    const res = await fetch("http://localhost:5001/api/auth/register", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ name, email, password })
-    });
+        if (!name || !email || !password) {
+            return showOutput("All fields are required", "error");
+        }
 
-    const data = await res.json();
+        const res = await fetch(`${BASE}/auth/register`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ name, email, password })
+        });
 
-    document.getElementById("output").innerText =
-        JSON.stringify(data, null, 2);
+        const data = await res.json();
+
+        if (!res.ok) {
+            return showOutput(data.error || "Registration failed", "error");
+        }
+
+        showOutput("✅ Registered successfully", "success");
+
+    } catch (err) {
+        showOutput("❌ Network error", "error");
+    }
 }
+
 
 async function login() {
-    const email = document.getElementById("logEmail").value;
-    const password = document.getElementById("logPassword").value;
+    try {
+        const email = logEmail.value;
+        const password = logPassword.value;
 
-    const res = await fetch(`${BASE}/auth/login`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({email, password })
-    });
+        const res = await fetch(`${BASE}/auth/login`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password })
+        });
 
-    const data = await res.json();
+        const data = await res.json();
 
-    // 🔥 SAVE TOKEN
-    localStorage.setItem("token", data.token);
+        if (!res.ok) {
+            return showOutput(data.error || "Login failed", "error");
+        }
 
-    document.getElementById("output").innerText =
-        JSON.stringify(data, null, 2);
-}
+        localStorage.setItem("token", data.token);
 
-async function getProfile() {
-    const id = document.getElementById('searchId').value;
+        showOutput("✅ Login successful", "success");
 
-    if (!id) {
-        alert("Please enter a student ID");
-        return;
+    } catch {
+        showOutput("❌ Network error", "error");
     }
+}
+async function getProfile() {
+    const id = searchId.value;
+
+    if (!id) return showOutput("Enter ID", "error");
 
     try {
         const res = await fetch(`${BASE}/students/${id}`, {
-            method: "GET",
             headers: {
-                "Authorization": `Bearer ${token}`,
-                "Content-Type": "application/json"
+                Authorization: `Bearer ${getToken()}`
             }
         });
 
-        if (!res.ok) {
-            const errorData = await res.json();
-            alert(`Error: ${errorData.message || res.status}`);
-            return;
-        }
+        const data = await res.json();
 
-        const student = await res.json();
-        console.log(student);
-        alert(`Student Name: ${student.name}, Age: ${student.age}`);
-    } catch (err) {
-        console.error(err);
-        alert("Failed to fetch student");
+        if (!res.ok) {
+            return showOutput(data.error || "Not found", "error");
+        }
+        showOutput(`
+            <div style="padding:10px; border:1px solid #444; border-radius:8px;">
+                <h3>👤 Student Profile</h3>
+                <p><b>ID:</b> ${data._id}</p>
+                <p><b>Name:</b> ${data.name}</p>
+                <p><b>Class:</b> ${data.class}</p>
+                <p><b>Course:</b> ${data.course}</p>
+                <p><b>Gender:</b> ${data.gender}</p>
+                <p><b>Age:</b> ${data.age}</p>
+
+                <button onclick="fillForm('${data._id}', '${data.name}', '${data.class}', '${data.course}', '${data.gender}', '${data.age}')">
+                    ✏️ Edit
+                </button>
+
+                <button onclick="deleteStudent('${data._id}')">
+                    🗑️ Delete
+                </button>
+            </div>
+        `, "success");;
+
+    } catch {
+        showOutput("❌ Failed to fetch", "error");
     }
 }
 
@@ -115,23 +157,53 @@ async function getStudents() {
 
 // ================= CREATE =================
 async function createStudent() {
-    const res = await fetch(`${BASE}/students`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${getToken()}`
-        },
-        body: JSON.stringify({
-            name: document.getElementById("name").value,
-            class: document.getElementById("studentClass").value,
-            course: document.getElementById("course").value,
-            gender: document.getElementById("gender").value,
-            age: document.getElementById("age").value
-        })
-    });
+    try {
+        const studentName = document.getElementById("name").value.trim();
+        const studentClass = document.getElementById("studentClass").value.trim();
+        const studentCourse = document.getElementById("course").value.trim();
+        const studentGender = document.getElementById("gender").value.trim();
+        const studentAge = document.getElementById("age").value.trim();
 
-    const data = await res.json();
-    console.log("Created:", data);
+        if (!studentName || !studentClass || !studentCourse || !studentGender || !studentAge) {
+            return showOutput("All fields are required", "error");
+        }
+
+        const res = await fetch(`${BASE}/students`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${getToken()}`
+            },
+            body: JSON.stringify({
+                name: studentName,
+                class: studentClass,
+                course: studentCourse,
+                gender: studentGender,
+                age: studentAge
+            })
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+            return showOutput(data.error || "Create failed", "error");
+        }
+
+        showOutput(`
+            ✅ Student Created Successfully<br><br>
+            <b>ID:</b> ${data._id}<br>
+            <b>Name:</b> ${data.name}<br>
+            <b>Class:</b> ${data.class}<br>
+            <b>Age:</b> ${data._age}<br>
+            <b>Gender:</b> ${data._gender}<br>
+            <b>Course:</b> ${data.course}
+        `, "success");
+
+        getStudents();
+
+    } catch {
+        showOutput("❌ Network error", "error");
+    }
 }
 
 // ================= FILL FORM (EDIT) =================
@@ -148,38 +220,62 @@ function fillForm(id, name, studentClass, course, gender, age) {
 // ================= UPDATE =================
 async function updateStudent() {
     if (!window.editId) {
-        alert("Click Edit first");
-        return;
+        return showOutput("Select a student first", "error");
     }
+
+    const studentName = document.getElementById("name").value.trim();
+    const studentClass = document.getElementById("studentClass").value.trim();
+    const studentCourse = document.getElementById("course").value.trim();
+    const studentGender = document.getElementById("gender").value.trim();
+    const studentAge = document.getElementById("age").value.trim();
 
     const res = await fetch(`${BASE}/students/${window.editId}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${getToken()}`
+            Authorization: `Bearer ${getToken()}`
         },
         body: JSON.stringify({
-            name: document.getElementById("name").value,
-            studentClass: document.getElementById("studentClass").value,
-            course: document.getElementById("course").value,
-            gender: document.getElementById("gender").value,
-            age: document.getElementById("age").value
+            name: studentName,
+            class: studentClass,
+            course: studentCourse,
+            gender: studentGender,
+            age: studentAge
         })
     });
 
     const data = await res.json();
-    console.log("Updated:", data);
 
+    if (!res.ok) {
+        return showOutput(data.error || "Update failed", "error");
+    }
+
+    showOutput("✅ Updated successfully", "success");
+
+    getStudents();
 }
 
 // ================= DELETE =================
 async function deleteStudent(id) {
-    await fetch(`${BASE}/students/${id}`, {
-        method: "DELETE",
-        headers: {
-            "Authorization": `Bearer ${getToken()}`
+    try {
+        const res = await fetch(`${BASE}/students/${id}`, {
+            method: "DELETE",
+            headers: {
+                Authorization: `Bearer ${getToken()}`
+            }
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+            return showOutput(data.error || "Delete failed", "error");
         }
-    });
-    const data = await res.json();
-    console.log("DELETE:", data);
+
+        showOutput("🗑️ Deleted successfully", "success");
+
+        getStudents();
+
+    } catch {
+        showOutput("❌ Network error", "error");
+    }
 }
