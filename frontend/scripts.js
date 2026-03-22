@@ -5,6 +5,27 @@ function getToken() {
     return localStorage.getItem("token");
 }
 
+
+if (window.location.pathname.includes("register.html")) {
+    if (localStorage.getItem("token")) {
+        window.location.href = "dashboard.html";
+    }
+}
+
+
+if (window.location.pathname.includes("index.html")) {
+    if (localStorage.getItem("token")) {
+        window.location.href = "dashboard.html";
+    }
+}
+
+// 🔒 Protect dashboard
+if (window.location.pathname.includes("dashboard.html")) {
+    if (!localStorage.getItem("token")) {
+        window.location.href = "index.html";
+    }
+}
+
 function showOutput(message, type = "info") {
     const output = document.getElementById("output");
 
@@ -47,6 +68,11 @@ async function register() {
 
         showOutput("✅ Registered successfully", "success");
 
+        // 🔥 REDIRECT
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 1000);
+
     } catch (err) {
         showOutput("❌ Network error", "error");
     }
@@ -55,8 +81,8 @@ async function register() {
 
 async function login() {
     try {
-        const email = logEmail.value;
-        const password = logPassword.value;
+        const email = document.getElementById("logEmail").value;
+        const password = document.getElementById("logPassword").value;
 
         const res = await fetch(`${BASE}/auth/login`, {
             method: "POST",
@@ -74,10 +100,17 @@ async function login() {
 
         showOutput("✅ Login successful", "success");
 
+        // 🔥 REDIRECT
+        setTimeout(() => {
+            window.location.href = "dashboard.html";
+        }, 1000);
+
     } catch {
         showOutput("❌ Network error", "error");
     }
 }
+
+
 async function getProfile() {
     const id = searchId.value;
 
@@ -137,17 +170,21 @@ async function getStudents() {
         const div = document.createElement("div");
 
         div.innerHTML = `
-            <p>
-                ${s.name} | ${s.studentClass} | ${s.course} | ${s.gender} | ${s.age}
-            </p>
+            <div className=ddd>
+                <h3>${s.name}</h3>
+                <p>Class: ${s.class}</p>
+                <p>Course: ${s.course}</p>
+                <p>Gender: ${s.gender}</p>
+                <p>Age: ${s.age}</p>
 
-            <button onclick="fillForm('${s._id}', '${s.name}', '${s.studentClass}', '${s.course}', '${s.gender}', '${s.age}')">
-                Edit
-            </button>
+                <button onclick="fillForm('${s._id}', '${s.name}', '${s.class}', '${s.course}', '${s.gender}', '${s.age}')">
+                    Edit
+                </button>
 
-            <button onclick="deleteStudent('${s._id}')">
-                Delete
-            </button>
+                <button onclick="deleteStudent('${s._id}')">
+                    Delete
+                </button>
+            </div>
         `;
 
         container.appendChild(div);
@@ -278,4 +315,13 @@ async function deleteStudent(id) {
     } catch {
         showOutput("❌ Network error", "error");
     }
+}
+
+function logout() {
+    localStorage.removeItem("token");
+    showOutput("Logged out", "success");
+
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 1000);
 }
