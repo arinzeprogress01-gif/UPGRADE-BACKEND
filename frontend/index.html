@@ -2,12 +2,15 @@
 <html>
 
 <head>
-    <title>Higgs Student App</title>
+    <title>Higgs Student App
+
+
+    </title>
 
     <style>
         body {
             font-family: Arial;
-            background: #0f172a;
+            background: #351902;
             color: white;
             padding: 20px;
         }
@@ -31,7 +34,7 @@
         }
 
         input {
-            background: #1e293b;
+            background: #5ae90849;
             color: white;
         }
 
@@ -46,7 +49,7 @@
         }
 
         .card {
-            background: #1e293b;
+            background: #140c00;
             padding: 10px;
             margin: 10px 0;
             border-radius: 8px;
@@ -72,13 +75,13 @@
 
 <body>
 
-    <h2>Register</h2>
+    <h2>STEP 1: REGISTRATION</h2>
     <input id="regName" placeholder="Name">
     <input id="regEmail" placeholder="Email">
     <input id="regPassword" placeholder="Password" type="password">
     <button onclick="register()">Register</button>
     
-    <h2>Login</h2>
+    <h2>STEP 2: LOGIN </h2>
     <input id="logEmail" placeholder="Email">
     <input id="logPassword" placeholder="Password" type="password">
     <button onclick="login()">Login</button>
@@ -86,29 +89,40 @@
     <pre id="output"></pre>
     
 
-    <h1>Student System</h1>
+    <h1>/STUDENT SECTION/</h1>
+
+        <!-- CREATE / UPDATE FORM -->
+        <h2>CREATE STUDENT</h2>
+        
+        <input id="name" placeholder="Name">
+        <input id="studentClass" placeholder="Class">
+        <input id="course" placeholder="Course">
+        <input id="gender" placeholder="Gender">
+        <input id="age" placeholder="Age">
+        
+        <button onclick="createStudent()">Create Student</button>
+        
+
+        <h2>UPDATE STUDENT</h2>
+
+        <input id="name" placeholder="Name">
+        <input id="studentClass" placeholder="Class">
+        <input id="course" placeholder="Course">
+        <input id="gender" placeholder="Gender">
+        <input id="age" placeholder="Age">
+        
+        <button onclick="updateStudent()">Update Selected Student</button>
     
+        <h2>GET YOUR DATA</h2>
     <input id="searchId" placeholder="Enter student ID">
     <button onclick="getProfile()">Get Student By ID</button>
 
     <!-- GET -->
-    <h2>Students</h2>
+    <h2>GET STUDENT LIST [ ADMIN ]</h2>
     
     <button onclick="getStudents()">Load Students</button>
     
     <div id="students"></div>
-
-    <!-- CREATE / UPDATE FORM -->
-    <h2>Create / Update Student</h2>
-
-    <input id="name" placeholder="Name">
-    <input id="studentClass" placeholder="Class">
-    <input id="course" placeholder="Course">
-    <input id="gender" placeholder="Gender">
-    <input id="age" placeholder="Age">
-
-    <button onclick="createStudent()">Create Student</button>
-    <button onclick="updateStudent()">Update Selected Student</button>
 
     <hr>
 
