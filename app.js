@@ -1,6 +1,8 @@
 // 1️⃣ Environment
 import dotenv from "dotenv";
 dotenv.config(); // initialize environment variables first
+ 
+import cors from "cors"
 
 import connectDB from "./config/db.js";
 
@@ -22,6 +24,8 @@ connectDB();
 // App initialization
 // ----------------------------
 const app = express();
+
+app.use(cors());
 
 // Parse incoming JSON
 app.use(express.json());

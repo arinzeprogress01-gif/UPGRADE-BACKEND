@@ -933,3 +933,269 @@
 2026-03-21T09:11:01.372Z [INFO]: Server running on port 5001
 2026-03-21T09:11:04.185Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
 2026-03-21T09:11:05.844Z [INFO]:  [POST] /api/students/auth/login - 404 - 6ms
+2026-03-21T21:39:11.476Z [INFO]: Server is starting...
+2026-03-21T21:39:11.492Z [INFO]: Server running on port 5001
+2026-03-21T21:39:15.140Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T21:39:16.265Z [INFO]:  [OPTIONS] /register - 200 - 7ms
+2026-03-21T21:39:17.970Z [INFO]:  [OPTIONS] /register - 200 - 1ms
+2026-03-21T21:39:59.658Z [INFO]: Server is starting...
+2026-03-21T21:39:59.672Z [INFO]: Server running on port 5001
+2026-03-21T21:40:01.366Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-21T21:40:04.003Z [INFO]:  [OPTIONS] /register - 200 - 7ms
+2026-03-21T21:40:37.843Z [INFO]: Server is starting...
+2026-03-21T21:40:37.868Z [INFO]: Server running on port 5001
+2026-03-21T21:40:42.407Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T21:40:45.736Z [INFO]:  [OPTIONS] /register - 200 - 5ms
+2026-03-21T21:40:50.023Z [INFO]:  [OPTIONS] /register - 200 - 2ms
+2026-03-21T21:46:00.679Z [INFO]: Server is starting...
+2026-03-21T21:46:00.693Z [INFO]: Server running on port 5001
+2026-03-21T21:46:03.966Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T21:46:05.921Z [INFO]:  [OPTIONS] /register - 200 - 7ms
+2026-03-21T21:46:15.971Z [INFO]:  [OPTIONS] /register - 200 - 2ms
+2026-03-21T23:19:33.248Z [INFO]: Server is starting...
+2026-03-21T23:19:33.260Z [INFO]: Server running on port 5001
+2026-03-21T23:19:35.490Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T23:19:40.374Z [WARN]: User with email arinzeprogress01@gmail.com already exists
+2026-03-21T23:19:40.377Z [INFO]:  [POST] /register - 400 - 188ms
+2026-03-21T23:20:22.420Z [INFO]: Server is starting...
+2026-03-21T23:20:22.433Z [INFO]: Server running on port 5001
+2026-03-21T23:20:24.485Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T23:20:27.407Z [ERROR]: Error in registerUser: User validation failed: name: Path `name` is required.
+2026-03-21T23:20:27.461Z [INFO]:  [POST] /register - 500 - 421ms
+2026-03-21T23:40:56.852Z [INFO]: Server is starting...
+2026-03-21T23:40:56.868Z [INFO]: Server running on port 5001
+2026-03-21T23:40:58.557Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-21T23:41:01.086Z [INFO]: USER CREATED SUCCESSFULLY 69bf2c8cba4dbdcbeb9c1ecf-arinzeprogress@gmail.com
+2026-03-21T23:41:01.088Z [INFO]:  [POST] /register - 201 - 508ms
+2026-03-21T23:46:30.264Z [INFO]: Server is starting...
+2026-03-21T23:46:30.294Z [INFO]: Server running on port 5001
+2026-03-21T23:46:32.046Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-21T23:46:35.254Z [INFO]: LOGIN SUCCESSFUL
+2026-03-21T23:46:35.261Z [INFO]:  [POST] /login - 200 - 351ms
+2026-03-21T23:46:38.827Z [INFO]:  [GET] /api/auth/me - 404 - 3ms
+2026-03-21T23:46:42.231Z [INFO]:  [GET] /api/auth/me - 404 - 2ms
+2026-03-22T00:20:01.363Z [INFO]: Server is starting...
+2026-03-22T00:20:01.386Z [INFO]: Server running on port 5001
+2026-03-22T00:20:03.069Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-22T00:20:14.680Z [INFO]:  [GET] /me - 401 - 10ms
+2026-03-22T00:20:40.245Z [INFO]: Server is starting...
+2026-03-22T00:20:40.257Z [INFO]: Server running on port 5001
+2026-03-22T00:20:41.794Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-22T00:20:45.171Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T00:20:45.174Z [INFO]:  [POST] /login - 200 - 355ms
+2026-03-22T00:20:48.085Z [INFO]:  [GET] /me - 200 - 196ms
+2026-03-22T00:22:47.646Z [INFO]: Server is starting...
+2026-03-22T00:22:47.666Z [INFO]: Server running on port 5001
+2026-03-22T00:22:49.252Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T00:22:50.684Z [INFO]: USER CREATED SUCCESSFULLY 69bf365ab9debeeb9b01f129-ayubapromise@gmail.com
+2026-03-22T00:22:50.686Z [INFO]:  [POST] /register - 201 - 517ms
+2026-03-22T00:22:54.724Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T00:22:54.727Z [INFO]:  [POST] /login - 200 - 298ms
+2026-03-22T00:22:57.138Z [INFO]:  [GET] /me - 200 - 148ms
+2026-03-22T05:36:35.552Z [INFO]: Server is starting...
+2026-03-22T05:36:35.566Z [INFO]: Server running on port 5001
+2026-03-22T05:36:37.223Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T05:37:16.577Z [INFO]: Server is starting...
+2026-03-22T05:37:16.590Z [INFO]: Server running on port 5001
+2026-03-22T05:37:18.384Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T05:38:42.544Z [INFO]: Server is starting...
+2026-03-22T05:38:42.557Z [INFO]: Server running on port 5001
+2026-03-22T05:38:44.179Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T05:43:56.474Z [INFO]: Server is starting...
+2026-03-22T05:43:56.491Z [INFO]: Server running on port 5001
+2026-03-22T05:43:58.268Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T05:52:46.752Z [INFO]: Server is starting...
+2026-03-22T05:52:46.767Z [INFO]: Server running on port 5001
+2026-03-22T05:52:48.468Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T05:52:52.038Z [INFO]: USER CREATED SUCCESSFULLY 69bf83b3205f7c8fba811c22-nnolifavour123@gmail.com
+2026-03-22T05:52:52.040Z [INFO]:  [POST] /register - 201 - 516ms
+2026-03-22T05:53:22.394Z [INFO]: Server is starting...
+2026-03-22T05:53:22.411Z [INFO]: Server running on port 5001
+2026-03-22T05:53:24.185Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T05:54:03.342Z [INFO]: Server is starting...
+2026-03-22T05:54:03.357Z [INFO]: Server running on port 5001
+2026-03-22T05:54:05.435Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T05:54:07.052Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T05:54:07.055Z [INFO]:  [POST] /login - 200 - 333ms
+2026-03-22T05:54:10.554Z [INFO]:  [GET] /me - 200 - 177ms
+2026-03-22T05:56:22.354Z [INFO]: Server is starting...
+2026-03-22T05:56:22.373Z [INFO]: Server running on port 5001
+2026-03-22T05:56:24.020Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T05:56:25.506Z [ERROR]: NO USER MATCHED nnolifavour123@gamil.com-nnoli123 NOT FOUND 
+2026-03-22T05:56:25.510Z [INFO]:  [POST] /login - 400 - 168ms
+2026-03-22T05:56:51.097Z [INFO]: Server is starting...
+2026-03-22T05:56:51.113Z [INFO]: Server running on port 5001
+2026-03-22T05:56:52.703Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T05:57:00.845Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T05:57:00.848Z [INFO]:  [POST] /login - 200 - 372ms
+2026-03-22T05:57:34.605Z [INFO]: Server is starting...
+2026-03-22T05:57:34.619Z [INFO]: Server running on port 5001
+2026-03-22T05:57:36.395Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T05:57:41.804Z [ERROR]: PASSWORD INVALID
+2026-03-22T05:57:41.809Z [INFO]:  [POST] /login - 400 - 365ms
+2026-03-22T05:58:01.706Z [INFO]: Server is starting...
+2026-03-22T05:58:01.719Z [INFO]: Server running on port 5001
+2026-03-22T05:58:03.304Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T05:58:12.253Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T05:58:12.256Z [INFO]:  [POST] /login - 200 - 338ms
+2026-03-22T05:58:44.469Z [INFO]: Server is starting...
+2026-03-22T05:58:44.485Z [INFO]: Server running on port 5001
+2026-03-22T05:58:46.093Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T05:59:49.525Z [INFO]: Server is starting...
+2026-03-22T05:59:49.538Z [INFO]: Server running on port 5001
+2026-03-22T05:59:51.519Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T05:59:53.059Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T05:59:53.061Z [INFO]:  [POST] /login - 200 - 407ms
+2026-03-22T05:59:55.928Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T05:59:55.930Z [INFO]:  [POST] /students - 400 - 8ms
+2026-03-22T05:59:55.938Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T05:59:55.941Z [INFO]:  [GET] /students - 404 - 7ms
+2026-03-22T06:05:38.111Z [INFO]: Server is starting...
+2026-03-22T06:05:38.127Z [INFO]: Server running on port 5001
+2026-03-22T06:05:39.886Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T06:05:43.195Z [ERROR]: PASSWORD INVALID
+2026-03-22T06:05:43.201Z [INFO]:  [POST] /login - 400 - 333ms
+2026-03-22T06:05:51.317Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:05:51.320Z [INFO]:  [POST] /login - 200 - 332ms
+2026-03-22T06:05:54.545Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T06:05:54.553Z [INFO]:  [POST] /students - 400 - 18ms
+2026-03-22T06:05:54.560Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:05:54.562Z [INFO]:  [GET] /students - 404 - 3ms
+2026-03-22T06:06:27.013Z [INFO]: Server is starting...
+2026-03-22T06:06:27.031Z [INFO]: Server running on port 5001
+2026-03-22T06:06:28.273Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:06:28.281Z [INFO]:  [GET] /students - 404 - 16ms
+2026-03-22T06:06:28.787Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T06:06:31.272Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:06:31.273Z [INFO]:  [GET] /students - 404 - 3ms
+2026-03-22T06:07:47.078Z [INFO]: Server is starting...
+2026-03-22T06:07:47.095Z [INFO]: Server running on port 5001
+2026-03-22T06:07:48.758Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T06:07:52.235Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:07:52.238Z [INFO]:  [POST] /login - 200 - 395ms
+2026-03-22T06:07:56.777Z [INFO]: All students retrieved successfully
+2026-03-22T06:07:56.780Z [INFO]:  [GET] /students - 200 - 147ms
+2026-03-22T06:09:05.311Z [INFO]: Server is starting...
+2026-03-22T06:09:05.332Z [INFO]: Server running on port 5001
+2026-03-22T06:09:07.167Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T06:09:08.216Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:09:08.229Z [INFO]:  [POST] /login - 200 - 381ms
+2026-03-22T06:09:10.695Z [INFO]:  [GET] /me - 304 - 165ms
+2026-03-22T06:43:01.269Z [INFO]: Server is starting...
+2026-03-22T06:43:01.286Z [INFO]: Server running on port 5001
+2026-03-22T06:43:03.097Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T06:43:04.600Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:43:04.603Z [INFO]:  [POST] /login - 200 - 382ms
+2026-03-22T06:43:31.804Z [INFO]: Server is starting...
+2026-03-22T06:43:31.817Z [INFO]: Server running on port 5001
+2026-03-22T06:43:33.396Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T06:43:44.509Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:43:44.511Z [INFO]:  [POST] /login - 200 - 346ms
+2026-03-22T06:43:45.683Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:43:45.685Z [INFO]:  [POST] /login - 200 - 363ms
+2026-03-22T06:43:46.475Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:43:46.478Z [INFO]:  [POST] /login - 200 - 515ms
+2026-03-22T06:44:42.173Z [INFO]: Server is starting...
+2026-03-22T06:44:42.185Z [INFO]: Server running on port 5001
+2026-03-22T06:44:43.775Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T06:44:45.060Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:44:45.064Z [INFO]:  [POST] /login - 200 - 1668ms
+2026-03-22T06:44:47.347Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T06:44:47.349Z [INFO]:  [POST] /students - 400 - 9ms
+2026-03-22T06:44:50.956Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T06:44:50.958Z [INFO]:  [POST] /students - 400 - 4ms
+2026-03-22T06:44:53.413Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T06:44:53.415Z [INFO]:  [POST] /students - 400 - 4ms
+2026-03-22T06:47:23.105Z [INFO]: Server is starting...
+2026-03-22T06:47:23.118Z [INFO]: Server running on port 5001
+2026-03-22T06:47:24.893Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-22T06:47:25.936Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:47:25.938Z [INFO]:  [POST] /login - 200 - 384ms
+2026-03-22T06:47:29.322Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T06:47:29.324Z [INFO]:  [POST] /students - 400 - 12ms
+2026-03-22T06:47:29.549Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T06:47:29.552Z [INFO]:  [POST] /students - 400 - 9ms
+2026-03-22T06:47:32.194Z [ERROR]: Error: Invalid student data - "class" is required
+2026-03-22T06:47:32.196Z [INFO]:  [POST] /students - 400 - 4ms
+2026-03-22T06:49:36.008Z [INFO]: Server is starting...
+2026-03-22T06:49:36.020Z [INFO]: Server running on port 5001
+2026-03-22T06:49:37.667Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-22T06:49:38.635Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:49:38.643Z [INFO]:  [POST] /login - 200 - 367ms
+2026-03-22T06:49:42.393Z [ERROR]: ERROR IN LOGGED STUDENT DATA
+2026-03-22T06:49:42.395Z [INFO]:  [POST] /students - 404 - 16ms
+2026-03-22T06:49:45.221Z [ERROR]: ERROR IN LOGGED STUDENT DATA
+2026-03-22T06:49:45.224Z [INFO]:  [POST] /students - 404 - 7ms
+2026-03-22T06:51:20.813Z [INFO]: Server is starting...
+2026-03-22T06:51:20.850Z [INFO]: Server running on port 5001
+2026-03-22T06:51:22.596Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-22T06:51:25.186Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:51:25.189Z [INFO]:  [POST] /login - 200 - 301ms
+2026-03-22T06:51:28.446Z [INFO]: Student with ID 69bf917031c10ea69b9497b3 created successfully
+2026-03-22T06:51:28.449Z [INFO]:  [POST] /students - 201 - 183ms
+2026-03-22T06:52:07.111Z [INFO]: Server is starting...
+2026-03-22T06:52:07.127Z [INFO]: Server running on port 5001
+2026-03-22T06:52:08.716Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-22T06:58:53.116Z [INFO]: Server is starting...
+2026-03-22T06:58:53.136Z [INFO]: Server running on port 5001
+2026-03-22T06:58:54.899Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T06:58:58.533Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:58:58.535Z [INFO]:  [POST] /login - 200 - 330ms
+2026-03-22T06:59:07.976Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:59:07.978Z [INFO]:  [GET] /students - 404 - 6ms
+2026-03-22T06:59:08.014Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:59:08.016Z [INFO]:  [GET] /students - 404 - 6ms
+2026-03-22T06:59:09.192Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:59:09.194Z [INFO]:  [GET] /students - 404 - 4ms
+2026-03-22T06:59:10.190Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:59:10.192Z [INFO]:  [GET] /students - 404 - 4ms
+2026-03-22T06:59:24.930Z [INFO]: Server is starting...
+2026-03-22T06:59:24.942Z [INFO]: Server running on port 5001
+2026-03-22T06:59:26.595Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T06:59:31.700Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T06:59:31.703Z [INFO]:  [POST] /login - 200 - 356ms
+2026-03-22T06:59:33.611Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:59:33.613Z [INFO]:  [GET] /students - 404 - 5ms
+2026-03-22T06:59:35.277Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T06:59:35.278Z [INFO]:  [GET] /students - 404 - 2ms
+2026-03-22T07:00:18.046Z [INFO]: Server is starting...
+2026-03-22T07:00:18.061Z [INFO]: Server running on port 5001
+2026-03-22T07:00:20.253Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T07:00:21.670Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T07:00:21.672Z [INFO]:  [POST] /login - 200 - 2282ms
+2026-03-22T07:00:21.730Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T07:00:21.732Z [INFO]:  [POST] /login - 200 - 358ms
+2026-03-22T07:00:33.011Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T07:00:33.013Z [INFO]:  [GET] /students - 404 - 4ms
+2026-03-22T07:00:35.218Z [ERROR]: YOU DO NOT ACCESS ADMIN ACCESS
+2026-03-22T07:00:35.220Z [INFO]:  [GET] /students - 404 - 4ms
+2026-03-22T07:01:15.247Z [INFO]: Server is starting...
+2026-03-22T07:01:15.260Z [INFO]: Server running on port 5001
+2026-03-22T07:01:16.802Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T07:01:19.541Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T07:01:19.551Z [INFO]:  [POST] /login - 200 - 380ms
+2026-03-22T07:01:22.557Z [INFO]: All students retrieved successfully
+2026-03-22T07:01:22.560Z [INFO]:  [GET] /students - 200 - 206ms
+2026-03-22T07:04:39.042Z [INFO]: Server is starting...
+2026-03-22T07:04:39.053Z [INFO]: Server running on port 5001
+2026-03-22T07:04:40.786Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T07:05:21.088Z [INFO]: Server is starting...
+2026-03-22T07:05:21.101Z [INFO]: Server running on port 5001
+2026-03-22T07:05:22.735Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T07:05:26.218Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T07:05:26.220Z [INFO]:  [POST] /login - 200 - 335ms
+2026-03-22T07:14:43.784Z [INFO]: Server is starting...
+2026-03-22T07:14:43.799Z [INFO]: Server running on port 5001
+2026-03-22T07:14:45.614Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-02.uorm8ml.mongodb.net
+2026-03-22T07:14:46.943Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T07:14:46.946Z [INFO]:  [POST] /login - 200 - 332ms
+2026-03-22T07:22:02.109Z [INFO]: Server is starting...
+2026-03-22T07:22:02.122Z [INFO]: Server running on port 5001
+2026-03-22T07:22:04.339Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-01.uorm8ml.mongodb.net
+2026-03-22T07:22:05.950Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T07:22:05.953Z [INFO]:  [POST] /login - 200 - 331ms
+2026-03-22T07:23:02.518Z [INFO]: Server is starting...
+2026-03-22T07:23:02.533Z [INFO]: Server running on port 5001
+2026-03-22T07:23:04.294Z [INFO]: MongoDB connected: ac-vagesgc-shard-00-00.uorm8ml.mongodb.net
+2026-03-22T07:23:05.539Z [INFO]: LOGIN SUCCESSFUL
+2026-03-22T07:23:05.543Z [INFO]:  [POST] /login - 200 - 1640ms

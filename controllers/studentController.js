@@ -40,7 +40,7 @@ export const getStudent = async (req, res) => {
    
     try{
         
-        const student = await Student.findById(req.studentId);
+        const student = await Student.findById(req.params.id);
 
         if (!student) {
             loggerUtils.error(`Error: Invalid student id - ${req.params.id}`);
