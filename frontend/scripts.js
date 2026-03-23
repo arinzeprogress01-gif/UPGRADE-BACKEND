@@ -84,6 +84,10 @@ async function login() {
         const email = document.getElementById("logEmail").value;
         const password = document.getElementById("logPassword").value;
 
+        if(!email || !password) {
+            return showOutput("EMAIL AND PASSWORD REQUIRED", "error")
+        }
+
         const res = await fetch(`${BASE}/auth/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -98,17 +102,43 @@ async function login() {
 
         localStorage.setItem("token", data.token);
 
+        localStorage("user", JSON.stringify(data.user));
+
         showOutput("✅ Login successful", "success");
 
         // 🔥 REDIRECT
-        setTimeout(() => {
+        
             window.location.href = "dashboard.html";
-        }, 1000);
 
     } catch {
-        showOutput("❌ Network error", "error");
+        showOutput("❌ Network error. Check internet", "error");
     }
 }
+
+
+function showSection(section) {
+    document.getElementById("homeSection").style.display = "none";
+    document.getElementById("profileSection").style.display = "none";
+    document.getElementById("adminSection").style.display = "none";
+    document.getElementById("formSection").style.display = "none";
+
+    if (section === "home") {
+        document.getElementById("homeSection").style.display = "block";
+    }
+
+    if (section === "profile") {
+        document.getElementById("profileSection").style.display = "block";
+    }
+
+    if (section === "admin") {
+        document.getElementById("adminSection").style.display = "block";
+    }
+
+    if (section === "form") {
+        document.getElementById("formSection").style.display = "block";
+    }
+}
+
 
 
 async function getProfile() {
@@ -170,12 +200,10 @@ async function getStudents() {
         const div = document.createElement("div");
 
         div.innerHTML = `
-            <div className=ddd>
+            <div style="background:#1e293b; padding:10px; margin:10px; border-radius:8px;">
                 <h3>${s.name}</h3>
-                <p>Class: ${s.class}</p>
-                <p>Course: ${s.course}</p>
-                <p>Gender: ${s.gender}</p>
-                <p>Age: ${s.age}</p>
+                <p>${s.class} | ${s.course}</p>
+                <p>${s.gender} | Age: ${s.age}</p>
 
                 <button onclick="fillForm('${s._id}', '${s.name}', '${s.class}', '${s.course}', '${s.gender}', '${s.age}')">
                     Edit
@@ -247,11 +275,15 @@ async function createStudent() {
 function fillForm(id, name, studentClass, course, gender, age) {
     window.editId = id;
 
-    document.getElementById("name").value = name;
-    document.getElementById("studentClass").value = studentClass;
-    document.getElementById("course").value = course;
-    document.getElementById("gender").value = gender;
-    document.getElementById("age").value = age;
+    document.getElementById("updateName").scrollIntoView({ behavior: "smooth" });
+
+    document.getElementById("updateName").value = name;
+    document.getElementById("updateClass").value = studentClass;
+    document.getElementById("updateCourse").value = course;
+    document.getElementById("updateGender").value = gender;
+    document.getElementById("updateAge").value = age;
+
+    showStatus("Student loaded into update form ✏️", "info");
 }
 
 // ================= UPDATE =================
@@ -260,36 +292,46 @@ async function updateStudent() {
         return showOutput("Select a student first", "error");
     }
 
-    const studentName = document.getElementById("name").value.trim();
-    const studentClass = document.getElementById("studentClass").value.trim();
-    const studentCourse = document.getElementById("course").value.trim();
-    const studentGender = document.getElementById("gender").value.trim();
-    const studentAge = document.getElementById("age").value.trim();
+    const updateName = document.getElementById("updateName").value.trim();
+    const updateClass = document.getElementById("updateClass").value.trim();
+    const updateCourse = document.getElementById("updateCourse").value.trim();
+    const updateGender = document.getElementById("updateGender").value.trim();
+    const updateAge = document.getElementById("updateAge").value.trim();
 
-    const res = await fetch(`${BASE}/students/${window.editId}`, {
-        method: "PUT",
-        headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${getToken()}`
-        },
-        body: JSON.stringify({
-            name: studentName,
-            class: studentClass,
-            course: studentCourse,
-            gender: studentGender,
-            age: studentAge
-        })
-    });
-
-    const data = await res.json();
-
-    if (!res.ok) {
-        return showOutput(data.error || "Update failed", "error");
+    // 🚨 validation (VERY IMPORTANT)
+    if (!updateName || !updateClass || !updateCourse || !updateGender || !updateAge) {
+        return showOutput("All fields are required", "error");
     }
 
-    showOutput("✅ Updated successfully", "success");
+    try {
+        const res = await fetch(`${BASE}/students/${window.editId}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${getToken()}`
+            },
+            body: JSON.stringify({
+                name: updateName,
+                class: updateClass,
+                course: updateCourse,
+                gender: updateGender,
+                age: Number(updateAge) // 🔥 convert to number
+            })
+        });
 
-    getStudents();
+        const data = await res.json();
+
+        if (!res.ok) {
+            return showOutput(data.error || "Update failed", "error");
+        }
+
+        showOutput("✅ Updated successfully", "success");
+
+        getStudents();
+
+    } catch (err) {
+        showOutput("Network error during update", "error");
+    }
 }
 
 // ================= DELETE =================
@@ -324,4 +366,31 @@ function logout() {
     setTimeout(() => {
         window.location.href = "index.html";
     }, 1000);
+}
+
+function loadUser() {
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (user) {
+        document.getElementById("welcome").innerText =
+            `WELCOME, ${user.name}`;
+    }
+}
+
+// run when dashboard loads
+if (window.location.pathname.includes("dashboard.html")) {
+    loadUser();
+}
+
+function checkRole() {
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (user.role !== "admin") {
+        document.getElementById("adminSection").style.display = "none";
+    }
+}
+
+if (window.location.pathname.includes("dashboard.html")) {
+    loadUser();
+    checkRole();
 }

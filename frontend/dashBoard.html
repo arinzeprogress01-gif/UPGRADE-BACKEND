@@ -99,50 +99,86 @@
     </style>
 </head>
 
-<body>
-    <h1>/STUDENT SECTION DASHBOARD/</h1>
+<body style="margin:0; font-family:Arial;">
 
-    <button onclick="logout()"> LOGOUT </button>
+<div style="display:flex; min-height:100vh;">
 
-    <!-- CREATE / UPDATE FORM -->
-    <h2>CREATE STUDENT</h2>
+    <!-- 🔵 SIDEBAR -->
+    <div style="width:220px; background:#020617; color:white; padding:20px;">
+        <h2>🎓HIGGS </h2>
 
-    <input id="name" placeholder="Name">
-    <input id="studentClass" placeholder="Class">
-    <input id="course" placeholder="Course">
-    <input id="gender" placeholder="Gender">
-    <input id="age" placeholder="Age">
+        <button onclick="showSection('home')">🏠 Dashboard</button>
+        <button onclick="showSection('profile')">👤 My Profile</button>
+        <button onclick="showSection('admin')">📊 Admin</button>
+        <button onclick="showSection('form')">✏️ Manage Student</button>
 
-    <button onclick="createStudent()">Create Student</button>
+        <hr>
 
+        <button onclick="logout()">🚪 Logout</button>
+    </div>
 
-    <h2>UPDATE STUDENT</h2>
+    <!-- ⚪ MAIN CONTENT -->
+    <div style="flex:1; padding:20px; background:#0f172a; color:white;">
 
-    <input id="name" placeholder="Name">
-    <input id="studentClass" placeholder="Class">
-    <input id="course" placeholder="Course">
-    <input id="gender" placeholder="Gender">
-    <input id="age" placeholder="Age">
+        <span id="welcome"></span>
 
-    <button onclick="updateStudent()">Update Selected Student</button>
+        <h1>/STUDENT SECTION DASHBOARD/</h1>
 
-    <h2>GET YOUR DATA</h2>
-    <input id="searchId" placeholder="Enter student ID">
-    <button onclick="getProfile()">Get Student By ID</button>
+        <!-- 🏠 HOME -->
+        <div id="homeSection">
+            <p>Welcome to Higgs Student System</p>
+        </div>
 
-    <div id="output"></div>
+        <!-- 👤 PROFILE -->
+        <div id="profileSection" style="display:none;">
+            <h2>GET YOUR DATA</h2>
 
-    <!-- GET -->
-    <h2>GET STUDENT LIST [ ADMIN ]</h2>
+            <input id="searchId" placeholder="Enter student ID">
+            <button onclick="getProfile()">Get Student By ID</button>
 
-    <button onclick="getStudents()">Load Students</button>
+            <div id="output"></div>
+        </div>
 
-    <div id="students"></div>
+        <!-- 📊 ADMIN -->
+        <div id="adminSection" style="display:none;">
+            <h2>GET STUDENT LIST [ ADMIN ]</h2>
 
-    <hr>
+            <button onclick="getStudents()">Load Students</button>
 
-    <script src="./scripts.js"></script>
+            <div id="students"></div>
+        </div>
 
+        <hr>
+
+        <!-- CREATE -->
+    <!-- FORM SECTION -->
+    <div id="formSection" style="display:none;">
+    
+        <h2>CREATE STUDENT</h2>
+    
+        <input id="name" placeholder="Name">
+        <input id="studentClass" placeholder="Class">
+        <input id="course" placeholder="Course">
+        <input id="gender" placeholder="Gender">
+        <input id="age" placeholder="Age">
+    
+        <button onclick="createStudent()">Create Student</button>
+    
+        <hr>
+    
+        <h2>UPDATE STUDENT</h2>
+    
+        <input id="updateName" placeholder="Name">
+        <input id="updateClass" placeholder="Class">
+        <input id="updateCourse" placeholder="Course">
+        <input id="updateGender" placeholder="Gender">
+        <input id="updateAge" placeholder="Age">
+    
+        <button onclick="updateStudent()">Update Selected Student</button>
+    
+    </div>
+</div>
+
+<script src="./scripts.js"></script>
 </body>
-
 </html>
